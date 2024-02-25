@@ -1,0 +1,26 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",],
+  theme: {
+    extend: {
+      colors: {
+        'black': '#000000 ',
+        'orange': '#f90',
+        'white': '#fff',
+        'gray': '#666',
+        'gray-dark': '#333',
+        'mis': '#1B2631',
+        'elegant': '#F5CBA7 '
+
+      },
+      fontFamily: {
+        'sans': ['Inter', 'sans-serif'],
+        'pisana': ['cursive'],
+        'link': ['Georgia']
+      },
+    },
+  },
+  plugins: [],
+}
+
