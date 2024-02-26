@@ -11,7 +11,8 @@ export default {
         'gray': '#666',
         'gray-dark': '#333',
         'mis': '#1B2631',
-        'elegant': '#F5CBA7 '
+        'elegant': '#F5CBA7',
+        'darksilver': '#717D7E'
 
       },
       fontFamily: {
