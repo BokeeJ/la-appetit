@@ -4,6 +4,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
     extend: {
+      backgroundImage: {
+        'pozadina': "url(/src/assets/images/pozadina.jpg)"
+      },
       colors: {
         'black': '#000000 ',
         'orange': '#f90',

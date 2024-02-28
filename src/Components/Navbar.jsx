@@ -23,7 +23,7 @@ function Navbar() {
 
 
     return (
-        <div className='lg:w-full bg-gray-800 text-white py-4 px-6 fixed top-0 z-10'>
+        <div className='lg:w-full bg-gray-800 text-white py-4 px-6 fixed top-0 z-10 relative'>
             <div className='w-full h-50px flex flex-row justify-between bg-black relative'>
                 <div className='flex flex-row lg:ml-10 mt-1 gap-3'><FaMapMarkerAlt size={20} color='white' /><span className='text-white'>Dositeja Obradovića 61, Lazarevac 11550</span> <FaPhoneAlt color='white' size={20} /><span className='text-white'>+381 69 784 050</span></div>
                 <div className='flex flex-row lg:mr-10 mt-1 gap-3'><a href="https://www.facebook.com/Restoran.La.Appetit/" target="_blank"><CiFacebook color='white' size={25} /></a> <a href="https://www.instagram.com/restoranlaappetit/" target="_blank"><FaInstagram color='white' size={25} /></a> </div>
