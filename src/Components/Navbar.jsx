@@ -14,8 +14,6 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 function Navbar() {
     const [toggle, setToggle] = useState(true);
 
-
-
     const handleMenu = () => {
         setToggle(!toggle)
     }
@@ -31,7 +29,7 @@ function Navbar() {
             <div className='w-full h-full md:h-[150px] lg:h-[120px] md:flex-row rounded-b-lg bg-black flex flex-col justify-between items-center'>
 
                 <motion.div
-                    className="box flex flex-row items-center lg:ml-5 md:ml-[150px]"
+                    className="box flex flex-row items-center lg:ml-5"
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{
@@ -45,8 +43,8 @@ function Navbar() {
                         }
                     }}
                 >
-                    <h2 className='text-white font-pisana m-[20px] text-[43px]'>la appétit</h2>
-                    <IoIosRestaurant size={40} color='white' /> <img src="/src/assets/sodapdf-converted_Page_6.jpeg" alt="laAppetit" className='h-[70px] w-[70px] rounded-[50px] transition-transform duration-300 transform-gpu scale-100 hover:scale-125' />
+                    <h2 className='text-white font-pisana m-[20px] text-[43px] text-5xl'>la appétit</h2>
+                    <IoIosRestaurant className='' size={40} color='white' /> <img src="/src/assets/sodapdf-converted_Page_6.jpeg" alt="laAppetit" className='h-[70px] w-[70px] rounded-[50px] transition-transform duration-300 transform-gpu scale-100 hover:scale-125' />
                 </motion.div>
                 <div className='flex flex-col gap-10 lg:m-[10px] p-5 justify-center items-center'>
                     <button className='md:hidden flex justify-center items-center' onClick={handleMenu}><RxHamburgerMenu size={40} color='white' /></button>
