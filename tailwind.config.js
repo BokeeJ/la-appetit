@@ -19,9 +19,11 @@ export default {
 
       },
       fontFamily: {
+        'naslovni': ['Philosopher'],
         'sans': ['Inter', 'sans-serif'],
         'pisana': ['cursive'],
-        'link': ['Georgia']
+        'link': ['Georgia'],
+        'debelaSlova': ['Abril Fatface']
       },
     },
   },

@@ -43,18 +43,18 @@ function Navbar() {
                         }
                     }}
                 >
-                    <h2 className='text-white font-pisana m-[20px] text-[43px] text-5xl'>la appétit</h2>
+                    <h2 className='text-white font-link m-[20px] text-[43px] text-5xl'>LA APPETIT</h2>
                     <IoIosRestaurant className='' size={40} color='white' /> <img src="/src/assets/sodapdf-converted_Page_6.jpeg" alt="laAppetit" className='h-[70px] w-[70px] rounded-[50px] transition-transform duration-300 transform-gpu scale-100 hover:scale-125' />
                 </motion.div>
                 <div className='flex flex-col gap-10 lg:m-[10px] p-5 justify-center items-center'>
                     <button className='md:hidden flex justify-center items-center' onClick={handleMenu}><RxHamburgerMenu size={40} color='white' /></button>
-                    <div>
-                        <ul className={`flex flex-row lg:flex-row md:flex-row w-full lg:gap-5 gap-2 p-1 ${toggle ? 'invisible' : null} lg:visible md:visible`}>
-                            <Link to="/" className='text-white font-linkovi hover:text-elegant hover:cursor-pointer  hover:scale-125 hover:scale-x-100 '>Pocetna</Link >
-                            <Link to="/meni" className='text-white font-linkovi hover:text-elegant cursor-pointer'>Meni</Link >
-                            <Link to="/Onama" className='text-white font-linkovi hover:text-elegant cursor-pointer'>O nama</Link >
-                            <Link to="/galerija" className='text-white font-linkovi hover:text-elegant cursor-pointer'>Galerija</Link >
-                            <Link to="/kontakt" className='text-white font-linkovi hover:text-elegant cursor-pointer'>Kontakt</Link >
+                    <div >
+                        <ul className={`flex flex-row lg:flex-row md:flex-row w-full lg:gap-16 gap-2 p-1 ${toggle ? 'invisible' : null} lg:visible md:visible`}>
+                            <Link to="/" className='text-white font-linkovi hover:text-elegant hover:cursor-pointer  hover:scale-125 hover:scale-x-100 '>POCETNA</Link >
+                            <Link to="/meni" className='text-white font-link hover:text-elegant cursor-pointer '>MENI</Link >
+                            <Link to="/Onama" className='text-white font-link hover:text-elegant cursor-pointer'>O NAMA</Link >
+                            <Link to="/galerija" className='text-white font-link hover:text-elegant cursor-pointer'>GALERIJA</Link >
+                            <Link to="/kontakt" className='text-white font-link hover:text-elegant cursor-pointer'>KONTAKT</Link >
                         </ul>
 
                     </div>
