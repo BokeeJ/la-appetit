@@ -23,8 +23,8 @@ function Navbar() {
     return (
         <div className='lg:w-full bg-gray-800 text-white py-4 px-6 fixed top-0 z-10 relative'>
             <div className='w-full h-50px flex flex-row justify-between bg-black relative'>
-                <div className='flex flex-row lg:ml-10 mt-1 gap-3'><FaMapMarkerAlt size={20} color='white' /><span className='text-white'>Dositeja Obradovića 61, Lazarevac 11550</span> <FaPhoneAlt color='white' size={20} /><span className='text-white'>+381 69 784 050</span></div>
-                <div className='flex flex-row lg:mr-10 mt-1 gap-3'><a href="https://www.facebook.com/Restoran.La.Appetit/" target="_blank"><CiFacebook color='white' size={25} /></a> <a href="https://www.instagram.com/restoranlaappetit/" target="_blank"><FaInstagram color='white' size={25} /></a> </div>
+                <div className='flex flex-row lg:ml-10 mt-1 gap-3 lg:flex-row'><a className='transition-transform duration-300 transform-gpu scale-100 hover:scale-100 flex flex-row gap-1' href="https://www.google.com/maps/place/La+Appetit/@44.385589,20.2529288,17.25z/data=!4m6!3m5!1s0x475a01303e611fd5:0xbbe98ad32dfd1643!8m2!3d44.3855271!4d20.2555972!16s%2Fg%2F11mx6jzhkq?hl=sr&entry=ttu/" target="_blank"><FaMapMarkerAlt color='white' size={25} />Dositeja Obradovića 61, Lazarevac 11550</a><FaPhoneAlt color='white' size={20} /><span className='text-white'>+381 69 784 050</span></div>
+                <div className='flex flex-row lg:mr-10 mt-1 gap-3'><a className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125' href="https://www.facebook.com/Restoran.La.Appetit/" target="_blank"><CiFacebook color='white' size={25} /></a> <a className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125' href="https://www.instagram.com/restoranlaappetit/" target="_blank"><FaInstagram color='white' size={25} /></a> </div>
             </div>
             <div className='w-full h-full md:h-[150px] lg:h-[120px] md:flex-row rounded-b-lg bg-black flex flex-col justify-between items-center'>
 
@@ -50,11 +50,11 @@ function Navbar() {
                     <button className='md:hidden flex justify-center items-center' onClick={handleMenu}><RxHamburgerMenu size={40} color='white' /></button>
                     <div >
                         <ul className={`flex flex-row lg:flex-row md:flex-row w-full lg:gap-16 gap-2 p-1 ${toggle ? 'invisible' : null} lg:visible md:visible`}>
-                            <Link to="/" className='text-white font-linkovi hover:text-elegant hover:cursor-pointer  hover:scale-125 hover:scale-x-100 '>POCETNA</Link >
-                            <Link to="/meni" className='text-white font-link hover:text-elegant cursor-pointer '>MENI</Link >
-                            <Link to="/Onama" className='text-white font-link hover:text-elegant cursor-pointer'>O NAMA</Link >
-                            <Link to="/galerija" className='text-white font-link hover:text-elegant cursor-pointer'>GALERIJA</Link >
-                            <Link to="/kontakt" className='text-white font-link hover:text-elegant cursor-pointer'>KONTAKT</Link >
+                            <Link to="/" className='text-white font-linkovi hover transition-transform duration-300 transform-gpu scale-100 hover:scale-125 '>POCETNA</Link >
+                            <Link to="/meni" className='text-white font-link  transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>MENI</Link >
+                            <Link to="/Onama" className='text-white font-link transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>O NAMA</Link >
+                            <Link to="/galerija" className='text-white font-link transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>GALERIJA</Link >
+                            <Link to="/kontakt" className='text-white font-link transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>KONTAKT</Link >
                         </ul>
 
                     </div>
