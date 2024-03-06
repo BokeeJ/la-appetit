@@ -65,14 +65,14 @@ function Footer() {
                     </div>
                 </div>
                 {/* Mini Contact */}
-                <div className='w-[200px] h-full flex flex-col gap-1'>
+                <div className='w-[200px] h-full flex flex-col gap-1 items-center'>
                     <h2 className='text-2xl text-white font-link'>KONTAKT</h2>
                     <hr className='text-white w-full border-solid border-white' />
                     <div className='mt-[40px] flex flex-col gap-8'>
                         <div className='flex flex-row gap-3 items-center'> <FaPhoneAlt color='white' size={25} />
                             <h3 className='text-white text-[16px] font-link'>+381 69 784 050</h3>
                         </div>
-                        <div className='flex flex-row gap-3 items-center'> <CiMail color='white' size={60} />
+                        <div className='flex flex-row gap-3 items-center'> <CiMail color='white' size={35} />
                             <h3 className='text-white mr-5 text-[16px] font-link'>lappetit@gmail.com</h3>
                         </div>
 
@@ -80,7 +80,7 @@ function Footer() {
 
                 </div>
                 {/* Mini Lokacija */}
-                <div className='w-[200px] h-full flex flex-col gap-1'>
+                <div className='w-[200px] h-full flex flex-col gap-1 items-center'>
                     <h2 className='text-2xl text-white font-link'>LOKACIJA</h2>
                     <hr className='text-white w-full border-solid border-white' />
 

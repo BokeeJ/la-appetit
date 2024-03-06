@@ -1,9 +1,76 @@
-import React from 'react'
+import React, { useState } from 'react';
+/// reactIcons
+import { GrLinkNext, GrLinkPrevious } from "react-icons/gr";
+///motion framer
+import { motion } from "framer-motion";
 
 function Galerija() {
+    const [fullscreen, setFullscreen] = useState(null);
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+
+
+    const goToPrevious = () => {
+        setCurrentIndex(prevIndex => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+        setFullscreen(images[currentIndex].id);
+    }
+
+    const goToNext = () => {
+        setCurrentIndex(prevIndex => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+        setFullscreen(images[currentIndex].id);
+    }
+
+    const images = [
+        { id: 1, path: "/src/assets/1.jpg" },
+        { id: 2, path: "/src/assets/2.jpg" },
+        { id: 3, path: "/src/assets/3.jpg" },
+        { id: 4, path: "/src/assets/4.jpg" },
+        { id: 5, path: "/src/assets/5.jpg" },
+        { id: 6, path: "/src/assets/6.jpg" },
+        { id: 7, path: "/src/assets/7.jpg" },
+        { id: 8, path: "/src/assets/8.jpg" },
+        { id: 9, path: "/src/assets/9.jpg" },
+        { id: 10, path: "/src/assets/10.jpg" },
+        { id: 11, path: "/src/assets/11.jpg" }
+    ];
+
     return (
-        <div>Galerija</div>
+        <div className="flex flex-col items-center relative">
+            {/* Glavna slika */}
+            <div className="relative mt-8">
+                <motion.img
+                    key={images[currentIndex].id}
+                    className="w-[800px] h-[600px]"
+                    src={images[currentIndex].path}
+                    alt="Main Picture"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.5 }}
+                />
+                {/* Strelice */}
+                <div>
+                    <GrLinkPrevious size={30} className="absolute top-1/2 left-0 transform -translate-y-1/2 cursor-pointer text-white" onClick={goToPrevious} />
+                </div>
+                <div>
+                    <GrLinkNext size={30} className="absolute top-1/2 right-0 transform -translate-y-1/2 cursor-pointer text-white" onClick={goToNext} />
+                </div>
+            </div>
+
+            {/* Male slike */}
+            <div className="flex flex-col md:flex-row lg:flex-row justify-center mt-4">
+                {images.map((image, index) => (
+                    <img
+                        key={image.id}
+                        className={`w-16 h-16 mx-2 ${currentIndex === index ? 'border-2 border-blue-500' : ''}`}
+                        src={image.path}
+                        alt={`Thumbnail ${index}`}
+                        onClick={() => setCurrentIndex(index)}
+                    />
+                ))}
+            </div>
+        </div>
     )
+
 }
 
-export default Galerija
+export default Galerija;
