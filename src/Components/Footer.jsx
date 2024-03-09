@@ -28,9 +28,9 @@ function Footer() {
     }
     return (
 
-        <div className='w-full h-full bg-black p-5 flex  relative '>
+        <div className='w-full h-full bg-black p-5 flex  relative flex justify-center'>
             {/* container */}
-            <div className='flex lg:flex-row flex-col gap-5  space-x-20 items-center justify-center ml-10 p-5 mb-10'>
+            <div className='flex lg:flex-row  flex-col gap-5  space-x-20 items-center justify-center p-5 mb-10'>
                 {/* O restoranu */}
                 <motion.div variants={fadeInAnimationVariants}
                     initial='initial'

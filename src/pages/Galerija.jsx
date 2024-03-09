@@ -40,7 +40,7 @@ function Galerija() {
             <div className="relative mt-8">
                 <motion.img
                     key={images[currentIndex].id}
-                    className="w-[800px] h-[600px]"
+                    className="w-[900px] h-[600px] rounded-2xl"
                     src={images[currentIndex].path}
                     alt="Main Picture"
                     initial={{ opacity: 0 }}
@@ -61,7 +61,7 @@ function Galerija() {
                 {images.map((image, index) => (
                     <img
                         key={image.id}
-                        className={`w-16 h-16 mx-2 ${currentIndex === index ? 'border-2 border-blue-500' : ''}`}
+                        className={`w-16 h-16 mx-2 rounded-2xl ${currentIndex === index ? 'border-2 border-blue-500' : ''}`}
                         src={image.path}
                         alt={`Thumbnail ${index}`}
                         onClick={() => setCurrentIndex(index)}
