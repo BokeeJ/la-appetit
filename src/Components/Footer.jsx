@@ -39,7 +39,7 @@ function Footer() {
                         once: true,
                     }} className='flex flex-col lg:w-[200px] w-full h-full gap-3 ml-10'
                 >
-                    <img className='w-[200px] h-[150] rounded-2xl' src="/src/assets/sodapdf-converted_Page_1.jpeg" alt="LA APPETIT" />
+                    <img className='w-[300px] h-[150] rounded-2xl' src="/sodapdf-converted_Page_1.jpeg" alt="LA APPETIT" />
                     <p className='text-white ml-5 font-link text-[17px]'>Dobrodošli u naš šarmantni restoran u srcu Lazarevca! Smešten u centru grada, naš restoran je omiljeno mesto za sve koji traže ukusnu hranu u opuštenom ambijentu. Naša prostrana bašta, ukrašena zelenilom, pruža idealno mesto za uživanje u sunčanom danu ili opuštajućoj večeri uz večeru.</p>
                     {/* social network */}
                     <div className='flex flex-wrap gap-2 ml-5'>
@@ -104,7 +104,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div className='text-white bottom-0 right-0 absolute lg:m-2 lg:mr-2 md:mr-2 md:m-2 mr-10'><p className='font-link'>© Copyright LA APPETIT - Developed by <span>Bojan Drazic</span></p></div>
+            <div className='text-white bottom-0 right-0 absolute lg:m-2 lg:mr-2 md:mr-2 md:m-2 mr-10'><p className='font-link'>© Copyright LA APPETIT </p></div>
         </div>
 
     )

@@ -50,9 +50,9 @@ function Navbar() {
                 >
                     <h2 className='text-white font-link m-[20px] text-[43px] text-5xl'>LA APPETIT</h2>
                     <IoIosRestaurant className='' size={40} color='white' />
-                    <img src="/src/assets/sodapdf-converted_Page_6.jpeg" alt="laAppetit" className='h-[70px] w-[70px] rounded-[50px] transition-transform duration-300 transform-gpu scale-100 hover:scale-125' />
+                    <img src="/sodapdf-converted_Page_6.jpeg" alt="laAppetit" className='h-[70px] w-[70px] rounded-[50px] transition-transform duration-300 transform-gpu scale-100 hover:scale-125' />
                 </motion.div>
-                <div className='flex flex-col gap-10 lg:m-[10px] p-5 justify-center items-center'>
+                <div className='w-full lg:h-[120px] bg-black flex flex-col justify-between items-center'>
                     <button className='md:hidden flex justify-center items-center' onClick={handleMenu}>
                         <RxHamburgerMenu size={40} color='white' />
                     </button>
