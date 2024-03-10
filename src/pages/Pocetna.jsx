@@ -50,7 +50,7 @@ function Pocetna() {
                 </div>
 
             </div >
-            <div className="w-full h-96 bg-cover bg-center p-5 flex justify-center" style={{ backgroundImage: 'url("/public/assets/enterijer.jpg")' }}>
+            <div className="w-full h-96 bg-cover bg-center p-5 flex justify-center" style={{ backgroundImage: 'url("/enterijer.jpg")' }}>
                 <motion.div
                     variants={fadeInAnimationVariants}
                     initial='initial'
@@ -73,7 +73,7 @@ function Pocetna() {
                             <p className='text-white p-2 font-pisana p-3'>Zagrizite u savršenstvo sa našim burgerom od junećeg mesa! Sočni burger od vrhunskog, cistog junećeg mesa, savršeno pečen i poslužen u mekanom pecivu, pruža neodoljivu kombinaciju ukusa i teksture. Osetite bogatstvo ukusa uz svaki zalogaj.</p>
                         </div>
                     </div>
-                    <img className='h-[300px] w-full' src="/src/assets/BBurger.jpg" alt="burger" />
+                    <img className='h-[300px] w-full' src="/BBurger.jpg" alt="burger" />
                 </div>
                 <div className='relative'>
                     <div className='bg-black h-[300px] w-full absolute opacity-0 hover:opacity-70 transition-opacity duration-100 flex items-center justify-center '>
@@ -92,7 +92,7 @@ function Pocetna() {
                             </div>
                         </div>
                     </div>
-                    <img className='h-[300px] w-full' src="/src/assets/Riba.jpg" alt="riba" /></div>
+                    <img className='h-[300px] w-full' src="/Riba.jpg" alt="riba" /></div>
                 <div>
                     <div className='relative'>
                         <div className='bg-black h-[300px] w-full absolute opacity-0 hover:opacity-70 transition-opacity duration-300 flex items-center justify-center '>
@@ -103,7 +103,7 @@ function Pocetna() {
                             </div>
                         </div>
                     </div>
-                    <img className='h-[300px] w-full' src="/src/assets/taljatele.jpg" alt="taljatele" /></div>
+                    <img className='h-[300px] w-full' src="/taljatele.jpg" alt="taljatele" /></div>
                 <div>
                     <div className='relative'>
                         <div className='bg-black h-[300px] w-full absolute opacity-0 hover:opacity-70 transition-opacity duration-300 flex items-center justify-center '>
@@ -114,7 +114,7 @@ function Pocetna() {
                             </div>
                         </div>
                     </div>
-                    <img className='h-[300px] w-full' src="/src/assets/slani kroasan.jpg" alt="kroasan" /></div>
+                    <img className='h-[300px] w-full' src="/slani kroasan.jpg" alt="kroasan" /></div>
             </div>
             <motion.div
                 variants={fadeInAnimationVariants}
@@ -123,7 +123,7 @@ function Pocetna() {
                 viewport={{
                     once: true,
                 }}
-                className="w-full h-96 bg-cover bg-center mt-1 border-4 border-black border-b-8 border-opacity-100" style={{ backgroundImage: 'url("/src/assets/ZZ6_5788.jpg")' }}>
+                className="w-full h-96 bg-cover bg-center mt-1 border-4 border-black border-b-8 border-opacity-100" style={{ backgroundImage: 'url("/ZZ6_5788.jpg")' }}>
                 <motion.div variants={fadeInAnimationVariants}
                     initial='initial'
                     whileInView='animate'
