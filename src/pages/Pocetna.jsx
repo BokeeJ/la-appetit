@@ -24,7 +24,7 @@ function Pocetna() {
     return (
         <div >
             {/* cover slika */}
-            <div className="w-full h-96 bg-cover bg-center  " style={{ backgroundImage: 'url("/src/assets/LaA_0091.jpg")' }}>
+            <div className="w-full h-96 bg-cover bg-center  " style={{ backgroundImage: 'url("`/LaA_0091.jpg")' }}>
             </div>
             {/* container */}
             <div className='flex flex-col lg:flex-row justify-center gap-10 p-10'>
