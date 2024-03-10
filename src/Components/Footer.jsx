@@ -28,16 +28,16 @@ function Footer() {
     }
     return (
 
-        <div className='w-full h-full bg-black p-5 flex  relative flex justify-center'>
+        <div className='w-full h-full bg-black p-5 flex  relative '>
             {/* container */}
-            <div className='flex lg:flex-row  flex-col gap-5  space-x-20 items-center justify-center p-5 mb-10'>
+            <div className='flex lg:flex-row  flex-col gap-5 justify-between items-center  p-5 mb-10'>
                 {/* O restoranu */}
                 <motion.div variants={fadeInAnimationVariants}
                     initial='initial'
                     whileInView='animate'
                     viewport={{
                         once: true,
-                    }} className='flex flex-col w-[200px] h-full gap-3 ml-10'
+                    }} className='flex flex-col lg:w-[200px] w-full h-full gap-3 ml-10'
                 >
                     <img className='w-[200px] h-[150] rounded-2xl' src="/src/assets/sodapdf-converted_Page_1.jpeg" alt="LA APPETIT" />
                     <p className='text-white ml-5 font-link text-[17px]'>Dobrodošli u naš šarmantni restoran u srcu Lazarevca! Smešten u centru grada, naš restoran je omiljeno mesto za sve koji traže ukusnu hranu u opuštenom ambijentu. Naša prostrana bašta, ukrašena zelenilom, pruža idealno mesto za uživanje u sunčanom danu ili opuštajućoj večeri uz večeru.</p>
@@ -50,9 +50,9 @@ function Footer() {
 
                 </motion.div>
 
-                <div className='w-[200px] h-full'>
+                <div className='h-full lg:w-[200px] w-full '>
                     {/* Mini Meni */}
-                    <div className='w-[200px] h-full flex flex-col items-center gap-1'>
+                    <div className='lg:w-[200px] w-full  h-full flex flex-col items-center gap-1'>
                         <h2 className='text-2xl text-white font-link'>MENI</h2>
                         <hr className='text-white w-full border-solid border-white' />
                         <ul className='flex flex-col items-center gap-8 text-sm text-white mt-10'>
@@ -65,7 +65,7 @@ function Footer() {
                     </div>
                 </div>
                 {/* Mini Contact */}
-                <div className='w-[200px] h-full flex flex-col gap-1 items-center'>
+                <div className='lg:w-[200px] w-full  h-full flex flex-col gap-1 items-center'>
                     <h2 className='text-2xl text-white font-link'>KONTAKT</h2>
                     <hr className='text-white w-full border-solid border-white' />
                     <div className='mt-[40px] flex flex-col gap-8'>
@@ -80,7 +80,7 @@ function Footer() {
 
                 </div>
                 {/* Mini Lokacija */}
-                <div className='w-[200px] h-full flex flex-col gap-1 items-center'>
+                <div className='lg:w-[200px] w-full  h-full flex flex-col gap-1 items-center'>
                     <h2 className='text-2xl text-white font-link'>LOKACIJA</h2>
                     <hr className='text-white w-full border-solid border-white' />
 
