@@ -31,7 +31,23 @@ function Galerija() {
         { id: 8, path: "/8.jpg" },
         { id: 9, path: "/9.jpg" },
         { id: 10, path: "/10.jpg" },
-        { id: 11, path: "/11.jpg" }
+        { id: 11, path: "/11.jpg" },
+        { id: 12, path: "/12.jpg" },
+        { id: 13, path: "/13.jpg" },
+        { id: 14, path: "/14.jpg" },
+        { id: 15, path: "/15.jpg" },
+        { id: 16, path: "/16.jpg" },
+        { id: 17, path: "/17.jpg" },
+        { id: 18, path: "/18.jpg" },
+        { id: 19, path: "/19.jpg" },
+        { id: 20, path: "/20.jpg" },
+        { id: 21, path: "/21.jpg" },
+        { id: 22, path: "/22.jpg" },
+        { id: 23, path: "/23.jpg" },
+        { id: 24, path: "/24.jpg" },
+        { id: 25, path: "/25.jpg" },
+        { id: 26, path: "/26.jpg" },
+
     ];
 
     return (
@@ -40,7 +56,7 @@ function Galerija() {
             <div className="relative mt-8">
                 <motion.img
                     key={images[currentIndex].id}
-                    className="w-[900px] h-[600px] rounded-2xl"
+                    className=" lg:w-[900px] lg:h-[600px] w-[400px] h-[350px] md:w-[600px] md:h-[400px] rounded-2xl"
                     src={images[currentIndex].path}
                     alt="Main Picture"
                     initial={{ opacity: 0 }}
@@ -57,7 +73,7 @@ function Galerija() {
             </div>
 
             {/* Male slike */}
-            <div className="flex flex-col md:flex-row lg:flex-row justify-center mt-4">
+            <div className="flex flex-wrap md:flex-row lg:flex-row justify-center mt-4">
                 {images.map((image, index) => (
                     <img
                         key={image.id}

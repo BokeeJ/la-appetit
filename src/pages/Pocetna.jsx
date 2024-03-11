@@ -24,42 +24,45 @@ function Pocetna() {
     return (
         <div >
             {/* cover slika */}
-            <div className="w-full h-96 bg-cover bg-center" style={{ backgroundImage: 'url("/LaA_0091.jpg")' }}>
+            <div className="w-full  h-96 bg-cover bg-center" style={{ backgroundImage: 'url("/LaA_0091.jpg")' }}>
             </div>
             {/* container */}
-            <div className='flex w-full flex-col lg:flex-row justify-center gap-10 p-10'>
-                <div className='flex flex-col border-solid border-2 border-sky-500 h-[200px] lg:w-[200px] bg-mis text-white items-center rounded-2xl p-2 hover:scale-125 transition-transform rounded-lg'>
-                    <img className='h-[180px] w-[180px] rounded-md flex-shrink-0' src="/burger.jpg" alt="dorucak" />
-                    <h4>Lep pocetak dana za vas u nasem restoranu</h4>
+            <div className='flex w-full flex-col lg:flex-row justify-between gap-10 p-10'>
+                <div className='flex flex-col border-solid border-2 border-gray lg:h-[450px] lg:w-[300px] bg-mis text-white items-center rounded-2xl p-4 hover:scale-125 transition-transform rounded-lg'>
+                    <img className='h-[230px] w-full rounded-md flex-shrink-0' src="/10.jpg" alt="dorucak" />
+                    <h4 className='p-5 font-pisana text-l'>Dovoljno je samo da nas pozovete, a mi ćemo se pobrinuti da vaši gosti uživaju u nezaboravnom gastronomskom iskustvu koje će dugo pamtiti. Uz naš ketering, svaki događaj će postati prava gozba za sva čula.</h4>
                 </div>
                 <motion.div variants={fadeInAnimationVariants}
                     initial='initial'
                     whileInView='animate'
                     viewport={{
                         once: true,
-                    }} className='bg-mis w-[230px] md:h-[390px] wd-full flex flex-col items-center p-5 border border-gray-300 shadow-md hover:scale-125 transition-transform rounded-lg'>
-                    <h1 className='font-link text-white flex flex-row items-center gap-2'> <IoIosRestaurant size={25} />LA APPETIT <IoIosRestaurant size={25} /></h1>
+                    }} className='bg-mis lg:w-[330px] md:h-[390px] w-full flex flex-col items-center p-5  border border-gray-300 shadow-md hover:scale-125 transition-transform rounded-lg lg:justify-center border-solid border-gray border-2  lg:ml-5'>
+                    <h1 className='font-link text-white flex flex-row items-center gap-2'> <IoIosRestaurant size={25} /><span className='text-2xl'>LA APPETIT </span><IoIosRestaurant size={25} /></h1>
                     <hr className='w-full my-2 border-t border-gray-400 text-white mt-5' />
-                    <span className='text-white size-md font-link mt-5 '>Mesto gde se susreću raskoš i harmonija, stvarajući jedinstveno iskustvo koje će vas inspirirati iznova i iznova.
+                    <span className='text-white  font-pisana mt-5 '>Mesto gde se susreću raskoš i harmonija, stvarajući jedinstveno iskustvo koje će vas inspirirati iznova i iznova.
                         U La Appetitu, hrana postaje umetnost, a svaki obrok je prilika za stvaranje nezaboravnih trenutaka. Dobrodošli u dom ukusa i elegancije.
                     </span>
+                    <Link to={'/Onama'}>
+                        <h2 className='text-white font-naslovni border-b-2 mt-2 text-l'>VISE O NAMA</h2></Link>
                 </motion.div>
-                <div className='flex flex-col border-solid border-2 border-sky-500 h-[200px] w-[200px] bg-mis text-white items-center rounded-2xl p-2 hover:scale-125 transition-transform'>
-                    <img className='h-[140px] w-[180px]  rounded-md flex-shrink-0' src="/pocetna.jpeg" alt="dorucak" />
-                    <h4>Lep pocetak dana za vas u nasem restoranu</h4>
+                <div className='flex flex-col border-solid border-2 border-gray lg:h-[450px] lg:w-[300px] w-full p-5 bg-mis text-white items-center rounded-2xl p-2 hover:scale-125 transition-transform'>
+                    <img className='h-[140px] w-full  rounded-md flex-shrink-0' src="/pocetna.jpeg" alt="dorucak" />
+                    <h4 className='font-pisana p-5'>Doživite čaroliju ukusa u restoranu La Appetit. Uživajte u savršenoj kombinaciji autentičnih ukusa i elegantne atmosfere. Dobrodošli u gastronomski raj. Lep pocetak dana za Vas u nasem restoranu</h4>
                 </div>
 
             </div >
-            <div className="w-full h-96 bg-cover bg-center p-5 flex justify-center" style={{ backgroundImage: 'url("/enterijer.jpg")' }}>
+            <div className="w-full relative h-96 bg-cover bg-center p-5 flex justify-center" style={{ backgroundImage: 'url("/enterijer.jpg")' }}>
+                <div className='absolute w-full h-full p-5 bg-black top-0 opacity-50'></div>
                 <motion.div
                     variants={fadeInAnimationVariants}
                     initial='initial'
                     whileInView='animate'
                     viewport={{
                         once: true,
-                    }} className='flex flex-col gap-3 items-center'>
+                    }} className='flex flex-col gap-3 items-center absolute'>
                     <h1 className='font-link text-3xl text-white mb-10'>LA APPETIT</h1>
-                    <h1 className='font-naslovni text-7xl text-white'>JELOVNIK </h1>
+                    <h1 className='font-naslovni lg:text-7xl text-4xl text-white'>JELOVNIK </h1>
                     <Link to={'/meni'}><button className='w-[200px] h-[30px] border border-slate-100 hover:text-orange border-[elegant]'><span className='text-white  font-naslovni hover:opacity-55 hover:border-opacity-50'>Kompletan meni</span ></button></Link>
                 </motion.div>
             </div >
@@ -73,7 +76,9 @@ function Pocetna() {
                             <p className='text-white p-2 font-pisana p-3'>Zagrizite u savršenstvo sa našim burgerom od junećeg mesa! Sočni burger od vrhunskog, cistog junećeg mesa, savršeno pečen i poslužen u mekanom pecivu, pruža neodoljivu kombinaciju ukusa i teksture. Osetite bogatstvo ukusa uz svaki zalogaj.</p>
                         </div>
                     </div>
-                    <img className='h-[300px] w-full' src="/BBurger.jpg" alt="burger" />
+                    <div className='flex justify-center'>
+                        <img className='h-[300px] lg:w-full w-[90%] p-1 rounded-xl' src="/BBurger.jpg" alt="burger" /></div>
+
                 </div>
                 <div className='relative'>
                     <div className='bg-black h-[300px] w-full absolute opacity-0 hover:opacity-70 transition-opacity duration-100 flex items-center justify-center '>
@@ -92,7 +97,10 @@ function Pocetna() {
                             </div>
                         </div>
                     </div>
-                    <img className='h-[300px] w-full' src="/Riba.jpg" alt="riba" /></div>
+                    <div className='flex justify-center'>
+                        <img className='h-[300px] w-[90%] p-1 rounded-xl' src="/Riba.jpg" alt="riba" />
+                    </div>
+                </div>
                 <div>
                     <div className='relative'>
                         <div className='bg-black h-[300px] w-full absolute opacity-0 hover:opacity-70 transition-opacity duration-300 flex items-center justify-center '>
@@ -103,7 +111,10 @@ function Pocetna() {
                             </div>
                         </div>
                     </div>
-                    <img className='h-[300px] w-full' src="/taljatele.jpg" alt="taljatele" /></div>
+
+                    <div className='flex justify-center items-center'>
+                        <img className='h-[300px] w-[90%] rounded-xl p-1' src="/taljatele.jpg" alt="taljatele" /></div>
+                </div>
                 <div>
                     <div className='relative'>
                         <div className='bg-black h-[300px] w-full absolute opacity-0 hover:opacity-70 transition-opacity duration-300 flex items-center justify-center '>
@@ -114,7 +125,9 @@ function Pocetna() {
                             </div>
                         </div>
                     </div>
-                    <img className='h-[300px] w-full' src="/slani kroasan.jpg" alt="kroasan" /></div>
+                    <div className='flex justify-center'>
+                        <img className='h-[300px] w-[90%] rounded-xl p-1' src="/slani kroasan.jpg" alt="kroasan" /></div>
+                </div>
             </div>
             <motion.div
                 variants={fadeInAnimationVariants}
@@ -123,17 +136,18 @@ function Pocetna() {
                 viewport={{
                     once: true,
                 }}
-                className="w-full h-96 bg-cover bg-center mt-1 border-4 border-black border-b-8 border-opacity-100" style={{ backgroundImage: 'url("/ZZ6_5788.jpg")' }}>
+                className="w-full h-96 bg-cover bg-center mt-1 border-4 border-black border-b-8 border-opacity-100" style={{ backgroundImage: 'url("/19.jpg")' }}>
                 <motion.div variants={fadeInAnimationVariants}
                     initial='initial'
                     whileInView='animate'
                     viewport={{
                         once: true,
                     }} className='flex flex-col items-center justify-center'>
-                    <div className='bg-black h-[300px] w-[500px] mt-5 rounded-3xl opacity-0 hover:opacity-70 transition-opacity duration-300 flex flex-col p-8 justify-center items-center gap-5'>
+                    <div className='bg-black  w-full mt-5 rounded-3xl opacity-0 hover:opacity-70 h-[300px]transition-opacity duration-300 flex flex-col p-8 justify-center items-center gap-5 lg:w-[700px]'>
                         <h2 className='text-white font-naslovi text-1xl '>SLATKO ZADOVOLJSTVO U ZALOGAJU</h2>
                         <hr className='text-white w-full border-solid border-white' />
-                        <p className='text-white'>Zavodljivi deserti koji oduševljavaju svim čulima. Otkrijte našu paletu neodoljivih poslastica koje će vas odvesti na putovanje ukusa i zadovoljstva. Prepustite se slatkim užicima i doživite savršen završetak svakog obroka. Dobrodošli u raj za ljubitelje slatkiša.</p>
+                        <p className='text-white font-pisana text-xl'>Zavodljivi deserti koji oduševljavaju svim čulima. Otkrijte našu paletu neodoljivih poslastica koje će vas odvesti na putovanje ukusa i zadovoljstva. Prepustite se slatkim užicima i doživite savršen završetak svakog obroka. Dobrodošli u raj za ljubitelje slatkiša.</p>
+
                     </div>
                 </motion.div>
 

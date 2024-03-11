@@ -28,23 +28,23 @@ function Footer() {
     }
     return (
 
-        <div className='w-full h-full bg-black p-5 flex  relative '>
+        <div className='w-full h-full bg-black lg:p-10 flex lg:justify-center relative '>
             {/* container */}
-            <div className='flex lg:flex-row  flex-col gap-5 justify-between items-center  p-5 mb-10'>
+            <div className='flex lg:flex-row  flex-col gap-10 justify-between items-center lg:w-full p-5 mb-10'>
                 {/* O restoranu */}
                 <motion.div variants={fadeInAnimationVariants}
                     initial='initial'
                     whileInView='animate'
                     viewport={{
                         once: true,
-                    }} className='flex flex-col lg:w-[200px] w-full h-full gap-3 ml-10'
+                    }} className='flex flex-col lg:w-[200px] w-full h-full gap-3 justify-center items-center'
                 >
                     <img className='w-[300px] h-[150] rounded-2xl' src="/sodapdf-converted_Page_1.jpeg" alt="LA APPETIT" />
                     <p className='text-white ml-5 font-link text-[17px]'>Dobrodošli u naš šarmantni restoran u srcu Lazarevca! Smešten u centru grada, naš restoran je omiljeno mesto za sve koji traže ukusnu hranu u opuštenom ambijentu. Naša prostrana bašta, ukrašena zelenilom, pruža idealno mesto za uživanje u sunčanom danu ili opuštajućoj večeri uz večeru.</p>
                     {/* social network */}
-                    <div className='flex flex-wrap gap-2 ml-5'>
-                        <a href="https://www.facebook.com/Restoran.La.Appetit/" target="_blank"><CiFacebook color='white' size={25} /></a>
-                        <a href="https://www.instagram.com/restoranlaappetit/" target="_blank"><FaInstagram color='white' size={25} /></a>
+                    <div className='flex flex-wrap gap-8'>
+                        <a href="https://www.facebook.com/Restoran.La.Appetit/" target="_blank"><CiFacebook color='white' size={30} /></a>
+                        <a href="https://www.instagram.com/restoranlaappetit/" target="_blank"><FaInstagram color='white' size={30} /></a>
 
                     </div>
 
@@ -53,21 +53,21 @@ function Footer() {
                 <div className='h-full lg:w-[200px] w-full '>
                     {/* Mini Meni */}
                     <div className='lg:w-[200px] w-full  h-full flex flex-col items-center gap-1'>
-                        <h2 className='text-2xl text-white font-link'>MENI</h2>
-                        <hr className='text-white w-full border-solid border-white' />
+                        <h2 className='text-2xl text-white  font-link'>MENI</h2>
+                        <hr className='text-white w-full border-2 border-solid border-white' />
                         <ul className='flex flex-col items-center gap-8 text-sm text-white mt-10'>
-                            <Link className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>POCETNA</Link>
-                            <Link className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>MENI</Link>
-                            <Link className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>O NAMA</Link>
-                            <Link className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>GALERIJA</Link>
-                            <Link className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>KONTAKT</Link>
+                            <Link to={'/'} className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>POCETNA</Link>
+                            <Link to={'/meni'} className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>MENI</Link>
+                            <Link to={'/Onama'} className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>O NAMA</Link>
+                            <Link to={'/galerija'} className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>GALERIJA</Link>
+                            <Link to={'/kontakt'} className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>KONTAKT</Link>
                         </ul>
                     </div>
                 </div>
                 {/* Mini Contact */}
                 <div className='lg:w-[200px] w-full  h-full flex flex-col gap-1 items-center'>
                     <h2 className='text-2xl text-white font-link'>KONTAKT</h2>
-                    <hr className='text-white w-full border-solid border-white' />
+                    <hr className='text-white w-full border-2 border-solid border-white' />
                     <div className='mt-[40px] flex flex-col gap-8'>
                         <div className='flex flex-row gap-3 items-center'> <FaPhoneAlt color='white' size={25} />
                             <h3 className='text-white text-[16px] font-link'>+381 69 784 050</h3>
@@ -80,18 +80,18 @@ function Footer() {
 
                 </div>
                 {/* Mini Lokacija */}
-                <div className='lg:w-[200px] w-full  h-full flex flex-col gap-1 items-center'>
+                <div className='lg:w-[200px] w-full   h-full flex flex-col gap-1 items-center'>
                     <h2 className='text-2xl text-white font-link'>LOKACIJA</h2>
-                    <hr className='text-white w-full border-solid border-white' />
+                    <hr className='text-white w-full border-solid border-2 border-white' />
 
-                    <div className='mt-[40px] flex flex-col gap-8'>
+                    <div className='mt-[40px] flex flex-col gap-8 ml-7'>
                         <div className='flex flex-row gap-3'>
                             <a className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125' href="https://www.google.com/maps/place/La+Appetit/@44.385589,20.2529288,17.25z/data=!4m6!3m5!1s0x475a01303e611fd5:0xbbe98ad32dfd1643!8m2!3d44.3855271!4d20.2555972!16s%2Fg%2F11mx6jzhkq?hl=sr&entry=ttu/" target="_blank"><FaMapMarkerAlt color='white' size={25} /></a>
                             <p className='text-[18px] font-link text-white'>Dositeja Obradovića 61, Lazarevac 11550</p>
 
 
                         </div>
-                        <div className='flex flex-row gap-3'>
+                        <div className='flex flex-row items-center gap-3'>
 
                             <CiClock1 color='white' size={25} />
 

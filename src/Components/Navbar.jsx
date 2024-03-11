@@ -56,7 +56,7 @@ function Navbar() {
                     <button className='md:hidden flex justify-center items-center' onClick={handleMenu}>
                         <RxHamburgerMenu size={40} color='white' />
                     </button>
-                    <div>
+                    <div className='mt-10'>
                         <ul className={`flex flex-col lg:flex-row md:flex-row w-full lg:gap-16 gap-3 p-1 ${toggle ? 'hidden lg:flex md:flex' : 'flex'}`}>
                             <Link to="/" className='text-white font-linkovi hover transition-transform duration-300 transform-gpu scale-100 hover:scale-125 '>POCETNA</Link>
                             <Link to="/meni" className='text-white font-link  transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>MENI</Link>
