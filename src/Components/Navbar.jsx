@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion'; // Uvezivanje motion komponenti iz Framer Motion biblioteke
 import { IoIosRestaurant } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { CiFacebook } from "react-icons/ci";
@@ -9,10 +9,10 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 function Navbar() {
-    const [toggle, setToggle] = useState(true);
+    const [toggle, setToggle] = useState(false);
 
     const handleMenu = () => {
-        setToggle(!toggle)
+        setToggle(!toggle);
     }
 
     return (
@@ -38,7 +38,7 @@ function Navbar() {
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{
-                        duration: 0.3,
+                        duration: 0.5,
                         ease: [0, 0.71, 0.2, 1.01],
                         scale: {
                             type: "spring",
@@ -48,23 +48,44 @@ function Navbar() {
                         }
                     }}
                 >
-                    <h2 className='text-white font-link m-[20px] text-[43px] text-5xl'>LA APPETIT</h2>
-                    <IoIosRestaurant className='' size={40} color='white' />
-                    <img src="/sodapdf-converted_Page_6.jpeg" alt="laAppetit" className='h-[70px] w-[70px] rounded-[50px] transition-transform duration-300 transform-gpu scale-100 hover:scale-125' />
+                    <div className='flex flex-col md:mt-8 justify-center items-center lg:absolute md:absolute p-2 h-full '>
+                        <img src="/sodapdf-converted_Page_6.jpeg" alt="laAppetit" className='h-[20px] w-[20px] lg:h-[30px] lg:w-[30px] mb-5 rounded-[50px] transition-transform duration-300 transform-gpu scale-100 hover:scale-125 ml-[85px] mb-[80px] absolute' />
+                        <h2 className='text-white font-link text-5xl'>LA APPETIT</h2>
+                    </div>
+
                 </motion.div>
                 <div className='w-full lg:h-[120px] bg-black flex flex-col justify-between items-center'>
                     <button className='md:hidden flex justify-center items-center' onClick={handleMenu}>
                         <RxHamburgerMenu size={40} color='white' />
                     </button>
-                    <div className='mt-10'>
-                        <ul className={`flex flex-col lg:flex-row md:flex-row w-full lg:gap-16 gap-3 p-1 ${toggle ? 'hidden lg:flex md:flex' : 'flex'}`}>
-                            <Link to="/" className='text-white font-linkovi hover transition-transform duration-300 transform-gpu scale-100 hover:scale-125 '>POCETNA</Link>
-                            <Link to="/meni" className='text-white font-link  transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>MENI</Link>
-                            <Link to="/Onama" className='text-white font-link transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>O NAMA</Link>
-                            <Link to="/galerija" className='text-white font-link transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>GALERIJA</Link>
-                            <Link to="/kontakt" className='text-white font-link transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>KONTAKT</Link>
-                        </ul>
-                    </div>
+                    {/* Prikazivanje navigacije na većim ekranima */}
+                    <ul className={`hidden lg:flex md:flex lg:gap-10 lg:ml-[80px] md:ml-[80px] mt-10 gap-2 p-1`}>
+                        <Link to="/" className='text-white font-linkovi hover transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>POCETNA</Link>
+                        <Link to="/meni" className='text-white font-link  transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>MENI</Link>
+                        <Link to="/Onama" className='text-white font-link transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>O NAMA</Link>
+                        <Link to="/galerija" className='text-white font-link transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>GALERIJA</Link>
+                        <Link to="/kontakt" className='text-white font-link transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>KONTAKT</Link>
+                    </ul>
+                    {/* Animacija za hamburger meni na manjim ekranima */}
+                    <AnimatePresence>
+                        {toggle && (
+                            <motion.div
+                                initial={{ opacity: 0, y: -20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: -20 }}
+                                transition={{ duration: 0.5 }}
+                                className='mt-10 '
+                            >
+                                <ul className={`flex flex-col lg:flex-row md:flex-row  w-full lg:gap-16 gap-1 p-1 `}>
+                                    <Link to="/" className='text-white font-linkovi hover transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>POCETNA</Link>
+                                    <Link to="/meni" className='text-white font-link  transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>MENI</Link>
+                                    <Link to="/Onama" className='text-white font-link transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>O NAMA</Link>
+                                    <Link to="/galerija" className='text-white font-link transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>GALERIJA</Link>
+                                    <Link to="/kontakt" className='text-white font-link transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>KONTAKT</Link>
+                                </ul>
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
                 </div>
             </div>
         </div>
