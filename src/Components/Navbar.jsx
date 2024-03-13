@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion'; // Uvezivanje motion komponenti iz Framer Motion biblioteke
+import { Link, NavLink } from 'react-router-dom';
+// motion former
+import { motion, AnimatePresence } from 'framer-motion';
+// react icons
 import { IoIosRestaurant } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { CiFacebook } from "react-icons/ci";
@@ -18,13 +20,16 @@ function Navbar() {
     return (
         <div className='lg:w-full bg-gray-800 text-white py-2 px-3 fixed top-0 z-10 relative'>
             <div className='w-full h-50px flex flex-row justify-between bg-black relative'>
-                <div className='flex flex-row lg:ml-10 mt-1 gap-3 lg:flex-row'>
-                    <a className='transition-transform duration-300 transform-gpu scale-100 hover:scale-100 flex flex-row gap-1' href="https://www.google.com/maps/place/La+Appetit/@44.385589,20.2529288,17.25z/data=!4m6!3m5!1s0x475a01303e611fd5:0xbbe98ad32dfd1643!8m2!3d44.3855271!4d20.2555972!16s%2Fg%2F11mx6jzhkq?hl=sr&entry=ttu/" target="_blank">
-                        <FaMapMarkerAlt color='white' size={25} />
-                        <span className='text-white'>Dositeja Obradovića 61, Lazarevac 11550</span>
+                <div className='flex flex-row lg:ml-10 mt-1 invisible lg:visible gap-7 lg:flex-row'>
+                    <div className=''>
+                        <a className='transition-transform duration-300 transform-gpu scale-100 hover:scale-100 flex flex-row gap-1' href="https://www.google.com/maps/place/La+Appetit/@44.385589,20.2529288,17.25z/data=!4m6!3m5!1s0x475a01303e611fd5:0xbbe98ad32dfd1643!8m2!3d44.3855271!4d20.2555972!16s%2Fg%2F11mx6jzhkq?hl=sr&entry=ttu/" target="_blank">
+                            <FaMapMarkerAlt color='white' size={25} />
+                            <span className='text-white'>Dositeja Obradovića 61, Lazarevac 11550</span>
+                        </a>
+                    </div>
+                    <div className='flex flex-row gap-4'>
                         <FaPhoneAlt color='white' size={20} />
-                        <span className='text-white'>+381 69 784 050</span>
-                    </a>
+                        <span className='text-white'>+381 69 784 050</span></div>
                 </div>
                 <div className='flex flex-row lg:mr-10 mt-1 gap-3'>
                     <a className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125' href="https://www.facebook.com/Restoran.La.Appetit/" target="_blank"><CiFacebook color='white' size={25} /></a>
@@ -59,12 +64,14 @@ function Navbar() {
                         <RxHamburgerMenu size={40} color='white' />
                     </button>
                     {/* Prikazivanje navigacije na većim ekranima */}
-                    <ul className={`hidden lg:flex md:flex lg:gap-10 lg:ml-[80px] md:ml-[80px] mt-10 gap-2 p-1`}>
-                        <Link to="/" className='text-white font-linkovi hover transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>POCETNA</Link>
-                        <Link to="/meni" className='text-white font-link  transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>MENI</Link>
-                        <Link to="/Onama" className='text-white font-link transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>O NAMA</Link>
-                        <Link to="/galerija" className='text-white font-link transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>GALERIJA</Link>
-                        <Link to="/kontakt" className='text-white font-link transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>KONTAKT</Link>
+                    <ul className={`hidden lg:flex md:flex lg:gap-10 absolute lg:ml-[80px] md:ml-[80px] mt-10 gap-2 p-1`}>
+                        <NavLink to="/"
+
+                            className='text-white font-link hover transition-transform duration-300 transform-gpu scale-100 hover:scale-125' >POČETNA</NavLink>
+                        <NavLink to="/meni" className='text-white font-link  transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>MENI</NavLink>
+                        <NavLink to="/kontakt" className='text-white font-link transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>PROSLAVE</NavLink>
+                        <NavLink to="/galerija" className='text-white font-link transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>GALERIJA</NavLink>
+                        <NavLink to="/Onama" className='text-white font-link transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>O NAMA</NavLink>
                     </ul>
                     {/* Animacija za hamburger meni na manjim ekranima */}
                     <AnimatePresence>
@@ -76,12 +83,13 @@ function Navbar() {
                                 transition={{ duration: 0.5 }}
                                 className='mt-10 '
                             >
-                                <ul className={`flex flex-col lg:flex-row md:flex-row  w-full lg:gap-16 gap-1 p-1 `}>
-                                    <Link to="/" className='text-white font-linkovi hover transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>POCETNA</Link>
-                                    <Link to="/meni" className='text-white font-link  transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>MENI</Link>
-                                    <Link to="/Onama" className='text-white font-link transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>O NAMA</Link>
-                                    <Link to="/galerija" className='text-white font-link transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>GALERIJA</Link>
-                                    <Link to="/kontakt" className='text-white font-link transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>KONTAKT</Link>
+                                <ul className={`flex flex-col lg:invisible md:invisible lg:flex-row md:flex-row  w-full lg:gap-16 gap-1 p-1 `}>
+                                    <NavLink to="/" className='text-white font-linkovi hover transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>POČETNA</NavLink>
+                                    <NavLink to="/meni" className='text-white font-link  transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>MENI</NavLink>
+                                    <NavLink to="/kontakt" className='text-white font-link transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>PROSLAVE</NavLink>
+                                    <NavLink to="/galerija" className='text-white font-link transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>GALERIJA</NavLink>
+                                    <NavLink to="/Onama" className='text-white font-link transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>O NAMA</NavLink>
+
                                 </ul>
                             </motion.div>
                         )}

@@ -56,11 +56,11 @@ function Footer() {
                         <h2 className='text-2xl text-white  font-link'>MENI</h2>
                         <hr className='text-white w-full border-2 border-solid border-white' />
                         <ul className='flex flex-col items-center gap-8 text-sm text-white mt-10'>
-                            <Link to={'/'} className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>POCETNA</Link>
+                            <Link to={'/'} className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>POČETNA</Link>
                             <Link to={'/meni'} className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>MENI</Link>
                             <Link to={'/Onama'} className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>O NAMA</Link>
                             <Link to={'/galerija'} className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>GALERIJA</Link>
-                            <Link to={'/kontakt'} className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>KONTAKT</Link>
+                            <Link to={'/kontakt'} className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>PROSLAVE</Link>
                         </ul>
                     </div>
                 </div>
@@ -73,7 +73,7 @@ function Footer() {
                             <h3 className='text-white text-[16px] font-link'>+381 69 784 050</h3>
                         </div>
                         <div className='flex flex-row gap-3 items-center'> <CiMail color='white' size={35} />
-                            <h3 className='text-white mr-5 text-[16px] font-link'>lappetit@gmail.com</h3>
+                            <h3 className='text-white mr-5 text-l font-link'>Restoran.la.appetit@gmail.com</h3>
                         </div>
 
                     </div>
@@ -93,11 +93,15 @@ function Footer() {
                         </div>
                         <div className='flex flex-row items-center gap-3'>
 
-                            <CiClock1 color='white' size={25} />
+                            <CiClock1 color='white' size={35} />
 
                             <div className='flex flex-col gap-3'>
-                                <p className='text-white text-[18px] font-link '>Ponedeljak - Nedelja <hr className='text-white w-full border-solid border-white' /> 08:00h - 23:00h</p>
-                                <p className='text-white text-[18px] font-link'>Petak-Subota <hr className='text-white w-full border-solid border-white' /> 08:00h - 00:00h</p>
+                                <div>
+                                    <p className='text-white text-[18px] font-link '>Ponedeljak-Nedelja </p>
+
+                                    <p className='text-white text-[18px] font-link'> 08:00h - 23:00h</p>
+                                </div>
+                                <p className='text-white text-[18px] font-link'>Petak-<br />Subota  <br />08:00h - 00:00h</p>
                             </div>
                         </div>
 
@@ -111,3 +115,4 @@ function Footer() {
 }
 
 export default Footer
+{/* <hr className='text-white w-full border-solid border-white' /> */ }

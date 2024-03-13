@@ -56,33 +56,37 @@ function Meni() {
                         <hr className='text-white border-2 m-4' />
                         <div className='flex flex-row'>
                             <h1 className='text-white font-link text-xl'>JAJA(3kom):</h1>
-                            <p className='text-white'><span className='ml-10'>Omlet</span>  <span className='ml-10'>Kajgana</span> <span className='ml-10'>Na oko</span>  </p>
+                            <p className='text-white'>
+                                <span className='ml-10'>Omlet</span>
+                                <span className='ml-10'>Kajgana</span>
+                                <span className='ml-10'>Na oko</span>
+                            </p>
                         </div>
                         <hr className='w-full text-white border-solid border-white mt-4' />
                         <div className='flex flex-row gap-1'>
                             <h1 className='text-white font-link text-xl'>DODACI:</h1>
-                            <p className='text-white'>
-                                <div className='flex flex-wrap'>
-                                    <span className='ml-5'>Sunka</span>
-                                    <span className='ml-5'>Njeguški pršut</span>
-                                    <span className='ml-5'>Pečurke</span>
-                                    <span className='ml-5'>Svinjski vrat</span>
-                                    <span className='ml-5'>Grilovano povrće</span>
-                                    <span className='ml-5'>Špinat</span>
-                                    <span className='ml-5'>Slanina</span>
-                                    <span className='ml-5'>Mini viršle</span>
-                                    <span className='ml-5'>Kulen</span>
-                                    <span className='ml-5'>Tanka zanatska kobasica</span></div>
-                            </p>
+
+                            <div className='flex flex-wrap text-white'>
+                                <span className='ml-5'>Sunka</span>
+                                <span className='ml-5'>Njeguški pršut</span>
+                                <span className='ml-5'>Pečurke</span>
+                                <span className='ml-5'>Svinjski vrat</span>
+                                <span className='ml-5'>Grilovano povrće</span>
+                                <span className='ml-5'>Špinat</span>
+                                <span className='ml-5'>Slanina</span>
+                                <span className='ml-5'>Mini viršle</span>
+                                <span className='ml-5'>Kulen</span>
+                                <span className='ml-5'>Tanka zanatska kobasica</span></div>
+
                         </div>
                         <hr className='w-full text-white border-solid border-white mt-4' />
                         <div className='flex flex-row gap-1'>
                             <h1 className='text-white font-link text-xl' >PRILOG:</h1>
-                            <p className='text-white'>
-                                <div className='flex flex-wrap'>
-                                    <span className='ml-5 '>Feta sir</span><span className='ml-5 '>Koziji sir</span><span className='ml-5 '>Mirocki sir(grilovan)</span><span className='ml-5 '>Ajvar</span><span className='ml-5 '>Kajmak</span><span className='ml-5 '>Pavlaka</span><span className='ml-5 '>Kackavalj</span><span className='ml-5 '>Mleko</span><span className='ml-5'>Jogurt</span><span className='ml-5 '>Kiselo mleko</span>
-                                </div>
-                            </p>
+
+                            <div className='flex flex-wrap text-white'>
+                                <span className='ml-5 '>Feta sir</span><span className='ml-5 '>Koziji sir</span><span className='ml-5 '>Mirocki sir(grilovan)</span><span className='ml-5 '>Ajvar</span><span className='ml-5 '>Kajmak</span><span className='ml-5 '>Pavlaka</span><span className='ml-5 '>Kackavalj</span><span className='ml-5 '>Mleko</span><span className='ml-5'>Jogurt</span><span className='ml-5 '>Kiselo mleko</span>
+                            </div>
+
 
                         </div>
                         <hr className='w-full text-white border-solid border-white mt-4' />
