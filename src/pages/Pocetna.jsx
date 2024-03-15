@@ -22,14 +22,14 @@ function Pocetna() {
         }
     }
     return (
-        <div >
+        <div className='w-full' >
             {/* cover slika */}
             <div className="w-full  h-96 bg-cover bg-center" style={{ backgroundImage: 'url("/5.jpg")' }}>
             </div>
             {/* container */}
             <div className='flex w-full flex-col lg:flex-row justify-between gap-5 p-10'>
-                <div className='flex flex-col border-solid border-2 border-gray lg:h-[450px] lg:w-[300px] bg-mis text-white items-center rounded-2xl  lg:hover:scale-125 lg:ml-5  transition-transform rounded-lg'>
-                    <img className='h-full w-full rounded-md flex-shrink-0' src="/rakija.jpg" alt="ZaricRakija" />
+                <div className='flex flex-col border-solid border-2 border-gray lg:h-[450px] lg:w-[300px] h-[200px] w-full bg-mis text-white items-center rounded-2xl   lg:ml-5  rounded-lg transition-transform relative  overflow-hidden'>
+                    <img className='h-full w-full rounded-md absolute top-0 left-0 transition-transform duration-1000 transform-gpu hover:scale-125' src="/rakija.jpg" alt="ZaricRakija" />
 
                 </div>
                 <motion.div variants={fadeInAnimationVariants}
@@ -37,22 +37,22 @@ function Pocetna() {
                     whileInView='animate'
                     viewport={{
                         once: true,
-                    }} className='bg-mis lg:w-[530px] md:h-[390px] w-full flex flex-col items-center p-5  border border-gray-300 shadow-md hover:scale-125 transition-transform rounded-lg lg:justify-center border-solid border-gray border-2  lg:ml-5'>
-                    <h1 className='font-link text-white flex flex-row items-center gap-2'> <IoIosRestaurant size={25} /><span className='text-2xl'>LA APPETIT </span><IoIosRestaurant size={25} /></h1>
+                    }} className='bg-black lg:w-[530px] md:h-[390px] w-full flex flex-col items-center p-5  border border-gray-300 shadow-md hover:scale-125 transition-transform rounded-2xl lg:justify-center border-solid border-gray border-2  lg:ml-5'>
+                    <h1 className='font-naslovni text-white flex flex-row items-center gap-2'><span className='text-4xl font-naslovni'>LA APPETIT </span><IoIosRestaurant size={40} /></h1>
                     <hr className='w-full my-2 border-t border-gray-400 text-white mt-5' />
-                    <span className='text-white  font-pisana mt-5 '>Mesto gde se susreću raskoš i harmonija, stvarajući jedinstveno iskustvo koje će vas inspirirati iznova i iznova.
-                        U La Appetitu, hrana postaje umetnost, a svaki obrok je prilika za stvaranje nezaboravnih trenutaka. Dobrodošli u dom ukusa i elegancije.
+                    <span className='text-white  font-link text-xl mt-5 '>Mesto gde se susreću raskoš i harmonija, stvarajući jedinstveno iskustvo koje će vas inspirirati iznova i iznova.
+                        U LA APPETITU, hrana postaje umetnost, a svaki obrok je prilika za stvaranje nezaboravnih trenutaka. Dobrodošli u dom ukusa i elegancije.
                     </span>
                     <Link to={'/Onama'}>
-                        <h2 className='text-white font-naslovni border-b-2 mt-2 text-l'>VIŠE O NAMA</h2></Link>
+                        <h2 className='text-white font-naslovni border-2 rounded-xl p-2 border-white border-solid mt-6 text-xl hover:opacity-55 hover:border-opacity-50'>VIŠE O NAMA</h2></Link>
                 </motion.div>
-                <div className='flex flex-col border-solid border-2 border-gray lg:h-[450px] lg:w-[300px] w-full bg-mis text-white items-center rounded-2xl lg:mr-5 lg:hover:scale-125 transition-transform'>
-                    <img className='h-full w-full  rounded-md flex-shrink-0' src="/vino.jpg" alt="Elegancija" />
+                <div className='flex flex-col border-solid border-2 border-gray lg:h-[450px] lg:w-[300px] h-[200px] w-full bg-mis text-white items-center rounded-2xl lg:mr-5 transition-transform relative w-full h-full overflow-hidden'>
+                    <img className='h-full w-full  rounded-md absolute top-0 left-0 transition-transform duration-1000 transform-gpu hover:scale-125' src="/vino.jpg" alt="Elegancija" />
 
                 </div>
 
             </div >
-            <div className="w-full relative h-96 bg-cover bg-center p-5 flex justify-center" style={{ backgroundImage: 'url("/enterijer.jpg")' }}>
+            <div className="w-full relative h-96 bg-cover bg-center p-5 flex items-center justify-center" style={{ backgroundImage: 'url("/enterijer.jpg")' }}>
                 <div className='absolute w-full h-full p-5 bg-black top-0 opacity-50'></div>
                 <motion.div
                     variants={fadeInAnimationVariants}
@@ -61,72 +61,42 @@ function Pocetna() {
                     viewport={{
                         once: true,
                     }} className='flex flex-col gap-3 items-center absolute'>
-                    <h1 className='font-link text-3xl text-white mb-10'>LA APPETIT</h1>
-                    <h1 className='font-naslovni lg:text-7xl text-4xl text-white'>JELOVNIK </h1>
-                    <Link to={'/meni'}><button className='w-[200px] h-[30px] border border-slate-100 hover:text-orange border-[elegant]'><span className='text-white  font-naslovni hover:opacity-55 hover:border-opacity-50'>Kompletan meni</span ></button></Link>
+                    {/* <h1 className='font-link text-3xl text-white mb-10'>LA APPETIT</h1> */}
+                    <div className='flex flex-col items-center'>
+                        <h1 className='font-naslovni lg:text-7xl text-4xl text-white'>JELOVNIK </h1>
+                        <Link to={'/meni'}>
+                            <button className='w-[200px] h-[50px] font-naslovni border-2 rounded-xl p-2 border-white border-solid mt-6 text-xl hover:opacity-55 hover:border-opacity-50 text-white'>
+                                KOMPLETAN MENI
+                            </button>
+                        </Link>
+                    </div>
                 </motion.div>
             </div >
-            {/* Mini meni */}
-            <div className='flex lg:flex-row md:flex-row flex-col w-full h-full mt-2 gap-2'>
-                <div className='relative'>
-                    <div className='bg-black h-[300px] w-full absolute opacity-0 hover:opacity-70 transition-opacity duration-300 flex items-center justify-center '>
-                        <div className='h-[290px] w-[300px] border-solid border-2 border-sky-100 items-center flex flex-col justify-center'>
-                            <h2 className='text-white text-4xl font-pisana'>Burger</h2>
-                            <hr className='w-[80%] my-2 border-t border-solid border-gray-400 text-white mt-5' />
-                            <p className='text-white p-2 font-pisana p-3'>Zagrizite u savršenstvo sa našim burgerom od junećeg mesa! Sočni burger od vrhunskog, cistog junećeg mesa, savršeno pečen i poslužen u mekanom pecivu, pruža neodoljivu kombinaciju ukusa i teksture. Osetite bogatstvo ukusa uz svaki zalogaj.</p>
-                        </div>
+            <div className='flex flex-col justify-center items-center m-2'>
+                <h1 className='text-white font-naslovni lg:text-4xl text-3xl mt-8'>NAŠA PREPORUKA</h1>
+                <hr className='border-gray border-solid w-[40%] m-5' />
+                <div className='flex lg:flex-row md:flex-row flex-wrap items-center justify-center w-full h-full gap-2 lg:gap-4 md:gap-3 m-3'>
+                    <div className='flex justify-center items-center flex-col text-white items-center font-naslovni text-xl border border-solid p-2 border-gray rounded-2xl'>
+                        <img className='h-[300px] w-[300px]  p-4 rounded-xl' src="/burger2024.JPG" alt="burger" />
+                        <span className='text-4xl'>Burger</span>
+                        <span>1200,00</span>
                     </div>
-                    <div className='flex justify-center'>
-                        <img className='h-[300px] lg:w-full w-[90%] p-1 rounded-xl' src="/BBurger.jpg" alt="burger" /></div>
-
-                </div>
-                <div className='relative'>
-                    <div className='bg-black h-[300px] w-full absolute opacity-0 hover:opacity-70 transition-opacity duration-100 flex items-center justify-center '>
-                        <div className='h-[290px] w-[300px] border-solid border-2 border-sky-100 items-center flex flex-col justify-center'>
-                            <h2 className='text-white text-4xl font-pisana'>Riba</h2>
-                            <hr className='w-[80%] my-2 border-t border-solid border-gray-400 text-white mt-5' />
-                            <p className='text-white p-2 font-pisana p-3'></p>
-                        </div>
+                    <div className='flex justify-center items-center flex-col text-white items-center font-naslovni text-xl border border-solid p-2 border-gray rounded-2xl'>
+                        <img className='h-[300px] w-[300px]  rounded-xl p-4' src="/20242.jpg" alt="meso2" />
+                        <span className='text-4xl'>Svinjski biftek</span>
+                        <span>1200,00</span>
                     </div>
-                    <div className='relative'>
-                        <div className='bg-black h-[300px] w-full absolute opacity-0 hover:opacity-70 transition-opacity duration-300 flex items-center justify-center '>
-                            <div className='h-[290px] w-[300px] border-solid border-2 border-sky-100 items-center flex flex-col justify-center'>
-                                <h2 className='text-white text-4xl font-pisana'>Riba</h2>
-                                <hr className='w-[80%] my-2 border-t border-solid border-gray-400 text-white mt-5' />
-                                <p className='text-white p-2 font-pisana p-3'>Uživajte u svežini mora u svakom zalogaju uz našu ribu! Sa pažljivo odabranim sastojcima i majstorskom pripremom, svaki tanjir predstavlja spoj ukusa koji će vas transportovati direktno na obalu.</p>
-                            </div>
-                        </div>
+                    <div className='flex justify-center items-center flex-col text-white items-center font-naslovni text-xl border border-solid p-2 border-gray rounded-2xl'>
+                        <img className='h-[300px] w-[300px]  rounded-xl p-4' src="/biftek.jpg" alt="biftek"></img>
+                        <span className='text-4xl'>Krvavi biftek</span>
+                        <span>1200,00</span>
                     </div>
-                    <div className='flex justify-center'>
-                        <img className='h-[300px] w-[90%] p-1 rounded-xl' src="/Riba.jpg" alt="riba" />
-                    </div>
-                </div>
-                <div>
-                    <div className='relative'>
-                        <div className='bg-black h-[300px] w-full absolute opacity-0 hover:opacity-70 transition-opacity duration-300 flex items-center justify-center '>
-                            <div className='h-[290px] w-[300px] border-solid border-2 border-sky-100 items-center flex flex-col justify-center'>
-                                <h2 className='text-white text-4xl font-pisana'>Taljatele</h2>
-                                <hr className='w-[80%] my-2 border-t border-solid border-gray-400 text-white mt-5' />
-                                <p className='text-white p-2 font-pisana p-3'>Uživajte u autentičnom italijanskom iskustvu uz naše taljatele! Sa svežim sastojcima i neodoljivim sosovima, svaki zalogaj je pravo putovanje kroz Italiju. Dobrodošli u kutak prave italijanske kulinarske tradicije!</p>
-                            </div>
-                        </div>
+                    <div className='flex justify-center items-center flex-col text-white items-center font-naslovni text-xl border border-solid p-2 border-gray rounded-2xl'>
+                        <img className='h-[300px] w-[300px] rounded-xl p-4' src="/losos.jpg" alt="losos"></img>
+                        <span className='text-4xl'>Losos</span>
+                        <span>1200,00</span>
                     </div>
 
-                    <div className='flex justify-center items-center'>
-                        <img className='h-[300px] w-[90%] rounded-xl p-1' src="/taljatele.jpg" alt="taljatele" /></div>
-                </div>
-                <div>
-                    <div className='relative'>
-                        <div className='bg-black h-[300px] w-full absolute opacity-0 hover:opacity-70 transition-opacity duration-300 flex items-center justify-center '>
-                            <div className='h-[290px] w-[300px] border-solid border-2 border-sky-100 items-center flex flex-col justify-center'>
-                                <h2 className='text-white text-4xl font-pisana '>Kroasan</h2>
-                                <hr className='w-[80%] my-2 border-t border-solid border-gray-400 text-white mt-5' />
-                                <p className='text-white p-2 font-pisana'>Uživajte u savršenom spoju hrskave teksture i bogatog ukusa uz naš slani kroasan! Sa mekanim, laganim testom i srdačnim nadjevom, svaki zalogaj je prava poslastica za nepca Dobrodošli u naš kutak gde se svaki kroasan priprema sa ljubavlju i pažnjom.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='flex justify-center'>
-                        <img className='h-[300px] w-[90%] rounded-xl p-1' src="/slani kroasan.jpg" alt="kroasan" /></div>
                 </div>
             </div>
             <motion.div

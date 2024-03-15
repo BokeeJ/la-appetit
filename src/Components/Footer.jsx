@@ -14,12 +14,12 @@ function Footer() {
     const fadeInAnimationVariants = {
         initial: {
             opacity: 0,
-            x: 100
+            y: 10
 
         },
         animate: {
-            opacity: 1,
-            x: 0,
+            opacity: 3,
+            y: 0,
             transition: {
                 delay: 0.1,
                 duration: 3
@@ -39,10 +39,11 @@ function Footer() {
                         once: true,
                     }} className='flex flex-col lg:w-[200px] w-full h-full gap-3 justify-center items-center'
                 >
-                    <img className='w-[300px] h-[150] rounded-2xl' src="/sodapdf-converted_Page_1.jpeg" alt="LA APPETIT" />
-                    <p className='text-white ml-5 font-link text-[17px]'>Dobrodošli u naš šarmantni restoran u srcu Lazarevca! Smešten u centru grada, naš restoran je omiljeno mesto za sve koji traže ukusnu hranu u opuštenom ambijentu. Naša prostrana bašta, ukrašena zelenilom, pruža idealno mesto za uživanje u sunčanom danu ili opuštajućoj večeri uz večeru.</p>
+                    <div className='flex items-center  flex-col'>
+                        <img className='w-[300px] mr-7 h-[150] rounded-2xl' src="/sodapdf-converted_Page_1.jpeg" alt="LA APPETIT" />
+                        <p className='text-white p-3 font-link text-[17px]'>Dobrodošli u naš šarmantni restoran u srcu Lazarevca! Smešten u centru grada, naš restoran je omiljeno mesto za sve koji traže ukusnu hranu u opuštenom ambijentu. Naša prostrana bašta, ukrašena zelenilom, pruža idealno mesto za uživanje u sunčanom danu ili opuštajućoj večeri uz večeru.</p></div>
                     {/* social network */}
-                    <div className='flex flex-wrap gap-8'>
+                    <div className='flex flex-wrap gap-8 mr-6'>
                         <a href="https://www.facebook.com/Restoran.La.Appetit/" target="_blank"><CiFacebook color='white' size={30} /></a>
                         <a href="https://www.instagram.com/restoranlaappetit/" target="_blank"><FaInstagram color='white' size={30} /></a>
 

@@ -54,12 +54,12 @@ function Meni() {
                         <hr className='w-full text-white border-dashed border-white' />
                         <h1 className='text-white font-link p-2 text-2xl ml-10 mt-5'>KREIRAJ SAM SVOJ DORUCAK</h1>
                         <hr className='text-white border-2 m-4' />
-                        <div className='flex flex-row'>
+                        <div className='flex flex-row '>
                             <h1 className='text-white font-link text-xl'>JAJA(3kom):</h1>
                             <p className='text-white'>
-                                <span className='ml-10'>Omlet</span>
-                                <span className='ml-10'>Kajgana</span>
-                                <span className='ml-10'>Na oko</span>
+                                <span className='ml-5'>Omlet</span>
+                                <span className='ml-5'>Kajgana</span>
+                                <span className='ml-5'>Na oko</span>
                             </p>
                         </div>
                         <hr className='w-full text-white border-solid border-white mt-4' />
@@ -76,7 +76,8 @@ function Meni() {
                                 <span className='ml-5'>Slanina</span>
                                 <span className='ml-5'>Mini viršle</span>
                                 <span className='ml-5'>Kulen</span>
-                                <span className='ml-5'>Tanka zanatska kobasica</span></div>
+                                <span className='ml-5'>Tanka zanatska kobasica</span>
+                            </div>
 
                         </div>
                         <hr className='w-full text-white border-solid border-white mt-4' />
@@ -90,7 +91,7 @@ function Meni() {
 
                         </div>
                         <hr className='w-full text-white border-solid border-white mt-4' />
-                        <div className='flex flex-row gap-10'>
+                        <div className='flex flex-row gap-10 '>
                             <h5 className='text-white text-xl font-link'>JAJA + 1 DODATAK + 1 PRILOG</h5>
                             <span className='text-white text-xl ml-4'>460,00</span>
                         </div>
@@ -129,12 +130,14 @@ function Meni() {
                 </div>
             </motion.div >
             {/* Steak */}
-            <motion.div variants={fadeInAnimationVariants}
+            <motion.div
+                variants={fadeInAnimationVariants}
                 initial='initial'
                 whileInView='animate'
                 viewport={{
                     once: true,
-                }} className='flex lg:flex-row md:flex-col flex-col border-white justify-center lg:gap-6 p-4'>
+                }
+                } className='flex lg:flex-row md:flex-col flex-col border-white justify-center lg:gap-6 p-4' >
                 <div className='lg:border-4   border-white border-4 rounded-t-2xl bg-mis'>
                     <h1 className='text-white font-link text-3xl m-10'>STEAK SELECTION</h1>
                     <hr className='text-white border-2 m-4' />
@@ -174,8 +177,8 @@ function Meni() {
                         })}
                     </div>
                 </div>
-            </motion.div>
-        </div>
+            </motion.div >
+        </div >
     )
 }
 
