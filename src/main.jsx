@@ -9,7 +9,8 @@ import Onama from './pages/Onama.jsx'
 import Meni from './pages/Meni.jsx'
 import Kontakt from './pages/Kontakt.jsx'
 import Galerija from './pages/Galerija.jsx'
-
+import Desert from './pages/Desert.jsx'
+import Dorucak from './pages/Dorucak.jsx'
 const router = createBrowserRouter([{
   path: '/',
   element: <App />,
@@ -34,6 +35,14 @@ const router = createBrowserRouter([{
     {
       path: '/galerija',
       element: <Galerija />,
+    },
+    {
+      path: '/desert',
+      element: <Desert />,
+    },
+    {
+      path: '/dorucak',
+      element: <Dorucak />,
     }
   ]
 }

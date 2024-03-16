@@ -21,7 +21,7 @@ function Galerija() {
     }
 
     const images = [
-        { id: 1, path: "/1.jpg" },
+
         { id: 2, path: "/2.jpg" },
         { id: 3, path: "/3.jpg" },
         { id: 4, path: "/4.jpg" },
