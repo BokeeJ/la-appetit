@@ -1,7 +1,7 @@
 import React from 'react'
-import { deserti } from '../Services/meni'
+import { likeriVermuti } from '../Services/meni'
 import { motion } from 'framer-motion'
-function Desert() {
+function LikeriVermut() {
     const fadeInAnimationVariants = {
         initial: {
             opacity: 0,
@@ -28,15 +28,15 @@ function Desert() {
             className='flex lg:flex-row md:flex-col flex-col border-white justify-center lg:gap-6 p-4'
         >
             <div className='lg:border-4 border-white border-4 rounded-t-2xl bg-mis'>
-                <h1 className='text-white font-link text-3xl m-10'>Deserti</h1>
+                <h1 className='text-white font-link text-3xl m-10'>Likeri i Vermuti</h1>
                 <hr className='text-white border-2 m-4' />
                 <div className=''>
-                    {deserti.map((meni, index) => {
+                    {likeriVermuti.map((meni, index) => {
                         return (
                             <div className='p-2 lg:w-[550px] md:w-[600px] ml-4' key={index}>
                                 <div className='flex flex-row justify-between '>
                                     <h1 className='text-white text-xl'>{meni.name}</h1>
-                                    <p className='text-white font-pisana text-l'>{meni.price}rsd</p>
+                                    <p className='text-white font-sans text-xl'>{meni.price}rsd</p>
                                 </div>
                                 <hr className='w-full text-white border-solid border-white' />
                                 <p className='text-white text-xl font-pisana'>{meni.description}</p>
@@ -49,4 +49,4 @@ function Desert() {
     )
 }
 
-export default Desert
+export default LikeriVermut

@@ -362,3 +362,703 @@ export const sosevi = [
         price: 230.00,
     }
 ]
+///////
+export const kokteli = [
+    {
+        id: 1,
+        name: "AMARETTO SOUR",
+        description: "Amaretto sour, Bourbon, sok od svezeg limuna",
+        price: 450
+    },
+    {
+        id: 2,
+        name: "MAI TAI",
+        description: "White rum, dark rum, Triple sec, Ameretto, sok od svezeg limuna, sok od ananasa",
+        price: 490
+    },
+    {
+        id: 3,
+        name: "GODFATHER",
+        description: "Bourbon, amaretto",
+        price: 450
+    },
+    {
+        id: 4,
+        name: "MOJITO",
+        description: "White rum, sveza nana, Spritte , limeta, zuti secer",
+        price: 480
+    },
+    {
+        id: 5,
+        name: "MARGARITA",
+        description: "Tequila ,Triple sec",
+        price: 410
+    },
+    {
+        id: 6,
+        name: "NEGRONI",
+        description: "Gin, Martini bianco, Campari",
+        price: 440
+    },
+    {
+        id: 7,
+        name: "APEROL SPRITZ",
+        description: "Aperol, Prosecco i kisela voda",
+        price: 480
+    }
+]
+export const viski = [
+    {
+        id: 1,
+        name: "BUSHMILLS ORGINAL 0.03",
+        price: 240
+    },
+    {
+        id: 2,
+        name: "JAMESON 0.03",
+        price: 300
+    },
+    {
+        id: 3,
+        name: "JACK DANIELS 0.03",
+        price: 370
+    },
+    {
+        id: 4,
+        name: "JOHNNY WALKER RED0.03",
+        price: 300
+    },
+    {
+        id: 5,
+        name: "JOHNNY WALKER BLACK 0.03",
+        price: 460
+    },
+    {
+        id: 6,
+        name: "CHIVAS REGAL 12YO 0.03",
+        price: 480
+    },
+    {
+        id: 7,
+        name: "FAMOUS GROUSE 0.03",
+        price: 320
+    },
+    {
+        id: 8,
+        name: "JIM BEAM BLACK 0.03",
+        price: 420
+    }
+]
+export const konjak = [
+    {
+        id: 1,
+        name: "COURVOISIER V.S. 0.03",
+        price: 400
+    },
+    {
+        id: 2,
+        name: "COURVOISIER V.S.O.P. 0.03",
+        price: 490
+    },
+    {
+        id: 3,
+        name: "HENNESSY 0.03",
+        price: 470
+    },
+    {
+        id: 4,
+        name: "VINJAK 0.03",
+        price: 240
+    }
+]
+export const likeriVermuti = [
+    {
+        id: 1,
+        name: "APEROL 0.04",
+        price: 250
+    },
+    {
+        id: 2,
+        name: "JAGERMEISTER 0.04",
+        price: 290
+    },
+    {
+        id: 3,
+        name: "GORKI LIST 0.04",
+        price: 250
+    },
+    {
+        id: 4,
+        name: "MARTINI BIANCO 0.04",
+        price: 260
+    },
+    {
+        id: 5,
+        name: "MARTINI ROSSO 0.04",
+        price: 260
+    },
+    {
+        id: 6,
+        name: "CAMPARI 0.04",
+        price: 250
+    },
+    {
+        id: 7,
+        name: "BAILEYS 0.05",
+        price: 360
+    }
+]
+export const vodkaDzin = [
+    {
+        id: 1,
+        name: "SMIRNOFF RED 0.03",
+        price: 250
+    },
+    {
+        id: 2,
+        name: "GREY GOOSE 0.03",
+        price: 420
+    },
+    {
+        id: 3,
+        name: "BEEFEATHER 0.03",
+        price: 230
+    },
+    {
+        id: 4,
+        name: "BOMBAY SAPHIRE 0.03",
+        price: 230
+    },
+    {
+        id: 5,
+        name: "HENDRIKS 0.03",
+        price: 380
+    }
+]
+export const rum = [
+    {
+        id: 1,
+        name: "HAVANA CLUB ANEJO 3 ANOS 0.03",
+        price: 255
+    },
+    {
+        id: 2,
+        name: "BACARDI BLACK 0.03",
+        price: 235
+    }
+]
+export const tekila = [
+    {
+        id: 1,
+        name: "OLMECA SILVER 0.03",
+        price: 270
+    },
+    {
+        id: 2,
+        name: "OLMECA GOLD 0.03",
+        price: 270
+    }
+]
+export const CrvenaVinaSrbije = [
+    {
+        id: 1,
+        name: "TRIANON - Alc 13.00%",
+        description: 'Vinarija Erdevik, Erdevik. Sortni sastav: Merlot, Syrah i Cabernet Sauvignon',
+        price: 3200
+    },
+    {
+        id: 2,
+        name: "AURELIUS KOVAČEVIĆ - Alc 14.50%",
+        description: 'Vinarija Kovačević, Irig. Sortni sastav: Cabernet Sauvignon i Merlot.',
+        price: 2800
+    },
+    {
+        id: 3,
+        name: "PUTNIK - Alc 15.00%",
+        description: 'Vinarija Milojević, Lazarevac.Sortni sastav: Cabernet Sauvignon i Vranac.',
+        price: 2000
+    },
+    {
+        id: 4,
+        name: "PROKUPAC DOJA - 14.00%",
+        description: 'Vinarija Doja, Toplica.Sortni sastav: Prokupac.',
+        price: 2600
+    },
+    {
+        id: 5,
+        name: "PINOT NOIR LASTAR - 14.00%",
+        description: 'Vinarija Lastar, Levač. Sortni sastav: Merlot i Franc.',
+        price: 3000
+    },
+    {
+        id: 6,
+        name: "KUPINOVO VINO ZUPA - 14.00% - 0,187l",
+        description: 'Vinarija Zupa,Zupa. Sortni sastav: Kupina.',
+        price: 360
+    }
+]
+///////
+export const vinoNaCasu = [
+    {
+        id: 1,
+        name: "MILOJEVIĆ VRANAC/CABERNET",
+        price: 350
+    },
+    {
+        id: 2,
+        name: "CARPE DIEM MERLOT",
+        price: 350
+    },
+    {
+        id: 3,
+        name: "LASTAR PINOT NOIR",
+        price: 350
+    },
+    {
+        id: 4,
+        name: "MILOJEVIĆ ROSE MERLOT",
+        price: 300
+    },
+    {
+        id: 5,
+        name: "CARPE DIEM ROSE",
+        price: 300
+    },
+    {
+        id: 6,
+        name: "MILOJEVIĆ",
+        price: 300
+    },
+    {
+        id: 7,
+        name: "CARPE DIEM TAMJANIKA",
+        price: 300
+    },
+    {
+        id: 8,
+        name: "LASTAR CARDONNAY",
+        price: 300
+    }
+]
+
+
+export const roseVinaSrbije = [
+    {
+        id: 1,
+        name: "TRI ROZE KOZE - Alc. 14.00%",
+        description: 'Vinarija Erdevik, Erdevik. Sortni sastav: Merlot, Syrah i Cabernet Sauvignon.',
+        price: 1800
+
+    },
+    {
+        id: 2,
+        name: "TRIJUMF ROSE - Alc. 12.50%",
+        description: 'Vinarija Aleksandrović, Topola. Sortni sastav: Cabernet Franc i Cabernet Sauvignon.',
+        price: 2600
+    },
+    {
+        id: 3,
+        name: "MIMA - Alc. 12.00%",
+        description: 'Vinarija Milojević, Lazarevac. Sortni sastav: Muskat Hamburg.',
+        price: 1800
+    },
+    {
+        id: 4,
+        name: "ROSE RADOVANOVIĆ - Alc. 12.00%",
+        description: 'Vinarija Radovanović, Krnjevo. Sortni sastav: Muskat Hamburg.',
+        price: 2600
+    },
+    {
+        id: 5,
+        name: "ROSE DOJA - Alc. 12.50%",
+        description: 'Vinarija Doja, Toplica. Sortni sastav: Cabernet Sauvignon.',
+        price: 2600
+    }
+]
+
+export const belaVina = [
+    {
+        id: 1,
+        name: "CHARDONNAY KOVACEVIĆ - Alc. 13.50%",
+        description: 'Vinarija Kovačević, Irig. Sortni sastav: Chardonnay.',
+        price: 2600
+    },
+    {
+        id: 2,
+        name: "CARDONNAY LANA - Alc. 11.50%",
+        description: 'Vinarija Milojević, Lazarevac. Sortni sastav: Chardonnay.',
+        price: 1800
+    },
+    {
+        id: 3,
+        name: "CARDONNAY LASTAR - Alc. 13.00%",
+        description: 'Vinarija Lastar, Levač. Sortni sastav: Chardonnay.',
+        price: 3000
+    },
+    {
+        id: 4,
+        name: "TAMJANIKA LASTAR - Alc. 12.00%",
+        description: 'Vinarija Lastar, Levač. Sortni sastav: Tamjanika.',
+        price: 3000
+    },
+    {
+        id: 5,
+        name: "TRIJUMF SELECTION - Alc. 13.50%",
+        description: 'Vinarija Aleksandrović, Topola. Sortni sastav: Sauvignon Blanc, Pinot Blanc i Riesling.',
+        price: 3800
+    },
+    {
+        id: 6,
+        name: "TAMJANIKA DOJA - Alc. 13.00%",
+        description: 'Vinarija Doja, Toplica. Sortni sastav: Tamjanika.',
+        price: 2800
+    }
+
+]
+
+
+export const deserti = [
+    {
+        id: 1,
+        name: "SUFE OD ČOKOLADE",
+        description: 'Sa šumskim voćem i sladoledom od vanile',
+        price: 500
+    },
+    {
+        id: 2,
+        name: "TOPLI KOLAČ OD MAKA",
+        description: 'Sa prelivom od bele cokolade i bademima',
+        price: 490
+    },
+    {
+        id: 3,
+        name: "PITA OD VIŠANJA",
+        description: 'U hrskavoj korici prelivena toplim voćem',
+        price: 430
+    },
+    {
+        id: 4,
+        name: "CHEESE CAKE",
+        description: 'Sa maskarpone sirom, preliven toplim šumskim voćem',
+        price: 420
+    },
+    {
+        id: 5,
+        name: "SLATKI KROASANI",
+        description: 'Kroasani sa nutelom i dzemom od kajsija',
+        price: 480
+    },
+    {
+        id: 6,
+        name: "PALAČINKA 'LA BOMBA' ",
+        description: 'Punjena mascarpone sirom, suvim grozdjem, medom, prelivena toplim karamel kremom',
+        price: 490
+    },
+    {
+        id: 7,
+        name: "PALAČINKE",
+        description: 'Od domaćeg testa',
+        price: ['Nutela:390rsd_', 'Nutela-Plazma:440rsd_', 'Dzem:360']
+    },
+    {
+        id: 8,
+        name: "SLADOLED KUGLA",
+        description: 'Čokolada, vanila, jagoda',
+        price: 120
+    }
+]
+export const topliNapici = [
+    {
+        id: 1,
+        name: "ESPRESSO",
+        price: 150
+    },
+    {
+        id: 2,
+        name: "ESPRESSO SA MLEKOM",
+        price: 170
+    },
+    {
+        id: 3,
+        name: "ESPRESSO SA SLAGOM",
+        price: 170
+    },
+    {
+        id: 4,
+        name: "ESPRESSO SA SOJINIM MLEKOM",
+        price: 190
+    },
+    {
+        id: 5,
+        name: "CAPPUCINO",
+        price: 180
+    },
+    {
+        id: 6,
+        name: "NESCAFE",
+        price: 190
+    },
+    {
+        id: 7,
+        name: "NESCAFE SA SLAGOM",
+        price: 200
+    },
+    {
+        id: 8,
+        name: "DOMACA KAFA",
+        price: 130
+    },
+    {
+        id: 9,
+        name: "CAJEVI PO IZBORU-MILFORD",
+        description: "Kamilica, Nana, Zeleni, Jagoda-Jogurt, Vocni miks",
+        price: 180
+    },
+    {
+        id: 10,
+        name: "TOPLA COKOLADA CRNA",
+        price: 260
+    },
+    {
+        id: 11,
+        name: "TOPLA COKOLADA BELA",
+        price: 260
+    },
+    {
+        id: 12,
+        name: "KUVANO VINO",
+        price: 200
+    }
+]
+export const specijalKafe = [
+    {
+        id: 1,
+        name: "MOCHA",
+        price: 230
+    },
+    {
+        id: 2,
+        name: "ESPRESSO FREDDO",
+        price: 240
+    },
+    {
+        id: 3,
+        name: "CAFFE LATTE",
+        price: 240
+    }
+]
+export const vode = [
+    {
+        id: 1,
+        name: "AQUA VIVA 0.25",
+        price: 165
+    },
+    {
+        id: 2,
+        name: "AQUA VIVA 0.75",
+        price: 295
+    },
+    {
+        id: 3,
+        name: "AQUA PANNA 0.25",
+        price: 285
+    },
+    {
+        id: 4,
+        name: "AQUA PANNA 0.75",
+        price: 495
+    }
+]
+export const flasiranaPiva = [
+    {
+        id: 1,
+        name: "HEINEKEN 0.25",
+        price: 290
+    },
+    {
+        id: 2,
+        name: "CARLSBERG 0.33",
+        price: 270
+    },
+    {
+        id: 3,
+        name: "TUBORG 0.33",
+        price: 270
+    }
+]
+export const tocenaPiva = [
+    {
+        id: 1,
+        name: "Valjevsko 0.30",
+        price: 210
+    },
+    {
+        id: 2,
+        name: "Valjevsko 0.50",
+        price: 270
+    }
+]
+export const somerbsy = [
+    {
+        id: 1,
+        name: "Borovnica 0.33",
+        price: 300
+    },
+    {
+        id: 2,
+        name: "Kruška 0.33",
+        price: 300
+    },
+    {
+        id: 3,
+        name: "Jabuka 0.33",
+        price: 300
+    }
+]
+export const sveziCedjeniSokovi = [
+    {
+        id: 1,
+        name: "LIMUNADA 0.30",
+        price: 200
+    },
+    {
+        id: 2,
+        name: "LIMUNANA 0.30",
+        price: 220
+    },
+    {
+        id: 3,
+        name: "CEDJENA POMORANDZA 0.30",
+        price: 380
+    },
+    {
+        id: 4,
+        name: "CEDJENI GREJP 0.30",
+        price: 400
+    },
+    {
+        id: 5,
+        name: "CEDJENII VOCNI MIX 0.30",
+        price: 450
+    }
+]
+///////////// Ovde nastaviti!!!!!!
+export const energija = [
+    {
+        id: 1,
+        name: "RED BULL 0.25 ",
+        price: 445
+    },
+    {
+        id: 2,
+        name: "NO SLEEP BY GUARANA 0.25 ",
+        price: 245
+    }
+]
+export const gaziraneVode = [
+    {
+        id: 1,
+        name: "KNJAZ MILOŠ 0.25",
+        price: 165
+    },
+    {
+        id: 2,
+        name: "KNJAZ MILOŠ AROMATICNI 0.33",
+        price: 195
+    },
+    {
+        id: 3,
+        name: "KNJAZ MILOŠ 0.75",
+        price: 295
+    },
+    {
+        id: 4,
+        name: "SAN PELLEGRINO 0.25",
+        price: 285
+    },
+    {
+        id: 5,
+        name: "SAN PELLEGRINO  0.75",
+        price: 495
+    }
+]
+export const gaziraniSokovi = [
+    {
+        id: 1,
+        name: "COCA COLA 0.25",
+        price: 210
+    },
+    {
+        id: 2,
+        name: "COCA COLA ZERO 0.25",
+        price: 210
+    },
+    {
+        id: 3,
+        name: "FANTA 0.25",
+        price: 210
+    },
+    {
+        id: 4,
+        name: "SPRITE 0.25",
+        price: 210
+    },
+    {
+        id: 5,
+        name: "TONIK 0.25",
+        price: 210
+    },
+    {
+        id: 6,
+        name: "BITER LEMON 0.25",
+        price: 210
+    },
+    {
+        id: 7,
+        name: "COCTA 0.25",
+        price: 210
+    }
+
+]
+export const negaziraniSokovi = [
+    {
+        id: 1,
+        name: "KUĆA PRIRODE JABUKA 0.20",
+        price: 250
+    },
+    {
+        id: 2,
+        name: "KUĆA PRIRODE BRESKVA 0.20",
+        price: 250
+    },
+    {
+        id: 3,
+        name: "KUĆA PRIRODE JAGODA 0.20",
+        price: 250
+    },
+    {
+        id: 4,
+        name: "KUĆA PRIRODE VIŠNJA 0.20",
+        price: 250
+    },
+    {
+        id: 5,
+        name: "KUĆA PRIRODE POMORANDZA 0.20",
+        price: 250
+    },
+    {
+        id: 6,
+        name: "KUĆA PRIRODE ARONIJA 0.20",
+        price: 280
+    },
+    {
+        id: 7,
+        name: "ICE TEA BRESKVA FUZE TEA 0.25",
+        price: 200
+    },
+    {
+        id: 8,
+        name: "CEDEVITA",
+        price: 200
+    }
+]
