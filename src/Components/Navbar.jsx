@@ -53,7 +53,7 @@ function Navbar() {
                         }
                     }}
                 >
-                    <div className='flex flex-col md:mt-8 justify-center items-center lg:absolute md:absolute p-2 h-full '>
+                    <div className='flex flex-col md:mt-8 justify-center items-center lg:absolute md:absolute p-2 h-[100px] '>
                         <img src="/sodapdf-converted_Page_6.jpeg" alt="laAppetit" className='h-[20px] w-[20px] lg:h-[30px] lg:w-[30px] mb-5 rounded-[50px] transition-transform duration-300 transform-gpu scale-100 hover:scale-125 ml-[85px] mb-[80px] absolute' />
                         <h2 className='text-white font-link text-5xl'>LA APPETIT</h2>
                     </div>

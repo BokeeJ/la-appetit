@@ -1,7 +1,7 @@
 import React from 'react'
-import { svezeSalate } from '../Services/meni'
+import { predjela } from '../Services/meni'
 import { motion } from 'framer-motion'
-function SvezeSalate() {
+function Predjela() {
     const fadeInAnimationVariants = {
         initial: {
             opacity: 0,
@@ -28,10 +28,10 @@ function SvezeSalate() {
             className='flex lg:flex-row md:flex-col flex-col border-white justify-center lg:gap-6 p-4'
         >
             <div className='lg:border-4 border-white border-4 rounded-t-2xl bg-mis'>
-                <h1 className='text-white font-link text-3xl m-10'>SVEZE SALATE</h1>
+                <h1 className='text-white font-link text-3xl m-10'>PREDJELA</h1>
                 <hr className='text-white border-2 m-4' />
                 <div className=''>
-                    {svezeSalate.map((meni, index) => {
+                    {predjela.map((meni, index) => {
                         return (
                             <div className='p-2 lg:w-[550px] md:w-[600px] ml-4' key={index}>
                                 <div className='flex flex-row justify-between '>
@@ -49,4 +49,4 @@ function SvezeSalate() {
     )
 }
 
-export default SvezeSalate
+export default Predjela

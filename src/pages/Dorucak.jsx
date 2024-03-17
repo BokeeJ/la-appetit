@@ -1,18 +1,41 @@
 import React from 'react'
 import { hrana } from '../Services/meni'
+import { motion } from 'framer-motion'
 function Dorucak() {
+    const fadeInAnimationVariants = {
+        initial: {
+            opacity: 0,
+            y: 100
+
+        },
+        animate: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                delay: 0.1,
+                duration: 3
+            }
+        }
+    }
 
     return (
-        <div className='p-10'>
-
-            <div className='bg-mis  border-white border-4 rounded-t-2xl  visible'>
+        <motion.div
+            variants={fadeInAnimationVariants}
+            initial='initial'
+            whileInView='animate'
+            viewport={{
+                once: true,
+            }}
+            className='flex lg:flex-row md:flex-col flex-col border-white justify-center lg:gap-6 p-4'
+        >
+            <div className='bg-mis  border-white border-4 rounded-t-2xl '>
                 <h1 className='text-white font-link text-3xl m-10'>DORUCAK</h1>
                 <hr className='text-white border-2 m-4' />
                 {hrana.map((meni, index) => {
                     return (
-                        <div className='p-2 lg:w-[800px] md:w-[600px] ml-4 ' key={index}>
+                        <div className='p-2 lg:w-[550px] md:w-[600px] ml-4 ' key={index}>
                             <div className='w-full flex flex-col'>
-                                <div className='flex flex-row w-full md:w-full full justify-between'>
+                                <div className='flex flex-row w-full justify-between'>
                                     <h1 className='text-white text-xl'>{meni.name}</h1>
                                     <p className='text-white font-sans text-xl'>{meni.price}rsd</p>
                                 </div>
@@ -26,7 +49,7 @@ function Dorucak() {
 
                     )
                 })}
-                <div className='flex flex-col p-2 lg:w-[550px] ml-4 absolute'>
+                <div className='flex flex-col p-2 lg:w-[550px] ml-4 '>
                     <hr className='w-full text-white border-dashed border-white' />
                     <h1 className='text-white font-link p-2 text-2xl ml-10 mt-5'>KREIRAJ SAM SVOJ DORUCAK</h1>
                     <hr className='text-white border-2 m-4' />
@@ -83,7 +106,7 @@ function Dorucak() {
                 </div>
 
             </div>
-        </div>
+        </motion.div>
     )
 }
 
