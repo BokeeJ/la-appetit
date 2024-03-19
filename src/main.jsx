@@ -11,6 +11,7 @@ import Kontakt from './pages/Kontakt.jsx'
 import Galerija from './pages/Galerija.jsx'
 import Desert from './pages/Desert.jsx'
 import Dorucak from './pages/Dorucak.jsx'
+
 const router = createBrowserRouter([{
   path: '/',
   element: <App />,

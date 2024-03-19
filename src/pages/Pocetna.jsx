@@ -29,31 +29,25 @@ function Pocetna() {
             <div className="w-full  h-96 bg-cover bg-center" style={{ backgroundImage: 'url("/5.jpg")' }}>
             </div>
             {/* container */}
-            <div className='flex w-full flex-col lg:flex-row justify-between gap-5 p-10'>
-                <div className='lex flex-col border-solid border-2 border-gray lg:h-[450px] lg:w-[300px] h-[200px] w-full bg-mis text-white items-center rounded-2xl   lg:mr-5  rounded-lg transition-transform relative  overflow-hidden '>
-                    <img className='h-full w-full rounded-md absolute top-0 left-0 transition-transform duration-[8000ms] transform-gpu hover:scale-150' src="/dveCase.jpg" alt="ZaricRakija" />
-
+            <div className='flex flex-col lg:flex-row md:flex-row justify-between p-10 gap-3'>
+                <div className='flex flex-col border-solid border-2 border-gray lg:h-[450px] lg:w-[800px] md:w-[700px] h-[500px] bg-mis text-white  items-center rounded-2xl  rounded-lg transition-transform relative overflow-hidden'>
+                    <img className='h-full w-full rounded-md absolute top-0 left-0 transition-transform duration-[8000ms] transform-gpu hover:scale-150 object-cover' src="/dveCase.jpg" alt="ZaricRakija" />
                 </div>
-                <motion.div variants={fadeInAnimationVariants}
-                    initial='initial'
-                    whileInView='animate'
-                    viewport={{
-                        once: true,
-                    }} className='bg-black lg:w-[530px] md:h-[390px] w-full flex flex-col items-center p-5  border border-gray-300 shadow-md hover:scale-125 transition-transform rounded-2xl lg:justify-center border-solid border-gray border-2  '>
+                <motion.div variants={fadeInAnimationVariants} initial='initial' whileInView='animate' viewport={{ once: true }} className='bg-black h-full w-full flex flex-col items-center p-5 border border-gray-300 shadow-md hover:scale-125 transition-transform rounded-2xl lg:justify-center border-solid border-gray border-2'>
                     <h1 className='font-naslovni text-white flex flex-row items-center gap-2'><span className='text-4xl font-naslovni'>LA APPETIT </span><IoIosRestaurant size={40} /></h1>
                     <hr className='w-full my-2 border-t border-gray-400 text-white mt-5' />
-                    <span className='text-white  font-link text-xl mt-5 '>Mesto gde se susreću raskoš i harmonija, stvarajući jedinstveno iskustvo koje će vas inspirirati iznova i iznova.
+                    <span className='text-white lg:text-xl font-link text-xl md:text-[16px]'>Mesto gde se susreću raskoš i harmonija, stvarajući jedinstveno iskustvo koje će Vas inspirirati iznova i iznova.
                         U LA APPETITU, hrana postaje umetnost, a svaki obrok je prilika za stvaranje nezaboravnih trenutaka. Dobrodošli u dom ukusa i elegancije.
                     </span>
                     <Link to={'/Onama'}>
-                        <h2 className='text-white font-naslovni border-2 rounded-xl p-2 border-white border-solid mt-6 text-xl hover:opacity-55 hover:border-opacity-50'>VIŠE O NAMA</h2></Link>
+                        <h2 className='text-white font-naslovni border-2 rounded-xl p-2 border-white border-solid mt-6 text-xl hover:opacity-55 hover:border-opacity-50'>VIŠE O NAMA</h2>
+                    </Link>
                 </motion.div>
-                <div className='lex flex-col border-solid border-2 border-gray lg:h-[450px] lg:w-[300px] h-[200px] w-full bg-mis text-white items-center rounded-2xl   lg:mr-5  rounded-lg transition-transform relative  overflow-hidden  '>
-                    <img className='h-full w-full  rounded-md absolute top-0 left-0 transition-transform duration-[8000ms] transform-gpu hover:scale-150' src="/vino.jpg" alt="Elegancija" />
-
+                <div className='flex flex-col border-solid border-2 border-gray lg:h-[450px] lg:w-[800px] h-[500px] md:w-[700px] w-full bg-mis text-white items-center justify-center rounded-2xl  rounded-lg transition-transform relative overflow-hidden'>
+                    <img className='h-full w-full cover-object rounded-md absolute top-0 left-0 transition-transform duration-[8000ms] transform-gpu hover:scale-150 object-cover' src="/vino.jpg" alt="Elegancija" />
                 </div>
+            </div>
 
-            </div >
             {/* JELOVNIK/KOMPLETAN MENI */}
             <div className="w-full relative h-96 bg-cover bg-center p-5 flex items-center justify-center" style={{ backgroundImage: 'url("/enterijer.jpg")' }}>
                 <div className='absolute w-full h-full p-5 bg-black top-0 opacity-50'></div>

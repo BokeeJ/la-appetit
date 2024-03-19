@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import { GrLinkNext, GrLinkPrevious } from "react-icons/gr";
 ///motion framer
 import { motion } from "framer-motion";
+///swipe 
+
 
 function Galerija() {
     const [fullscreen, setFullscreen] = useState(null);
