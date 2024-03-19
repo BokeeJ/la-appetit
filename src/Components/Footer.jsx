@@ -41,11 +41,17 @@ function Footer() {
                 >
                     <div className='flex items-center  flex-col'>
                         <img className='w-[300px]  h-[150] rounded-3xl' src="/sodapdf-converted_Page_1.jpeg" alt="LA APPETIT" />
-                        <p className='text-white ml-5 p-3 font-link text-[17px]'>Dobrodošli u naš šarmantni restoran u srcu Lazarevca! Smešten u centru grada, naš restoran je omiljeno mesto za sve koji traže ukusnu hranu u opuštenom ambijentu. Naša prostrana bašta, ukrašena zelenilom, pruža idealno mesto za uživanje u sunčanom danu ili opuštajućoj večeri uz večeru.</p></div>
+                    </div>
                     {/* social network */}
-                    <div className='flex flex-wrap gap-8 '>
-                        <a href="https://www.facebook.com/Restoran.La.Appetit/" target="_blank"><CiFacebook color='white' size={30} /></a>
-                        <a href="https://www.instagram.com/restoranlaappetit/" target="_blank"><FaInstagram color='white' size={30} /></a>
+                    <div className='flex flex-col gap-5 p-5 '>
+                        <div className='flex flex-row gap-3'>
+                            <a className='text-white' href="https://www.facebook.com/Restoran.La.Appetit/" target="_blank"><CiFacebook color='white' size={40} /></a>
+                            <p className='text-white'>Restoran La Appetit</p>
+                        </div>
+                        <div className='flex flex-row gap-3'>  <a className='text-white' href="https://www.instagram.com/restoranlaappetit/" target="_blank"><FaInstagram color='white' size={40} /></a>
+                            <p className='text-white'>restoranlaappetit</p>
+                        </div>
+
 
                     </div>
 
@@ -59,9 +65,11 @@ function Footer() {
                         <ul className='flex flex-col items-center gap-8 text-sm text-white mt-10'>
                             <Link to={'/'} className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>POČETNA</Link>
                             <Link to={'/meni'} className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>MENI</Link>
-                            <Link to={'/Onama'} className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>O NAMA</Link>
-                            <Link to={'/galerija'} className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>GALERIJA</Link>
                             <Link to={'/kontakt'} className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>PROSLAVE</Link>
+                            <Link to={'/galerija'} className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>GALERIJA</Link>
+                            <Link to={'/Onama'} className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>O NAMA</Link>
+
+
                         </ul>
                     </div>
                 </div>
@@ -109,7 +117,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div className='text-white bottom-0 right-0 absolute lg:m-2 lg:mr-2 md:mr-2 md:m-2 mr-10'><p className='font-link'>© Copyright LA APPETIT </p></div>
+            <div className='text-white bottom-0 right-0 absolute lg:m-2 lg:mr-2 md:mr-2 md:m-2 mr-10'><p className='font-link'>© Copyright La Appetit </p></div>
         </div>
 
     )

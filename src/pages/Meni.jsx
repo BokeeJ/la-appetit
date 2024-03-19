@@ -1703,6 +1703,8 @@ function Meni() {
                         {rozeVinaSrbOpen && <RozeVinaSrb />}
                         <button className={vinoCasaOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleVinoCasaClick}>VINO NA ČAŠU</button>
                         {vinoCasaOpen && <VinoCasa />}
+                        <img className='w-[390px] h-[350px] rounded-3xl' src="/39.jpg" alt="" />
+
                     </div>
                 </div >
 

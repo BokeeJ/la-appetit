@@ -53,7 +53,12 @@ function Galerija() {
         { id: 30, path: "/30.jpg" },
         { id: 31, path: "/31.jpg" },
         { id: 32, path: "/32.jpg" },
-        { id: 33, path: "/33.jpg" }
+        { id: 33, path: "/33.jpg" },
+        { id: 34, path: "/34.jpg" },
+        { id: 35, path: "/35.jpg" },
+        { id: 36, path: "/36.jpg" },
+        { id: 37, path: "/37.jpg" },
+        { id: 38, path: "/38.jpg" },
 
 
     ];

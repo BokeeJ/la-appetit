@@ -29,7 +29,7 @@ function Dorucak() {
             className='flex lg:flex-row md:flex-col flex-col border-white justify-center lg:gap-6 p-4'
         >
             <div className='bg-mis  border-white border-4 rounded-t-2xl '>
-                <h1 className='text-white font-link text-3xl m-10'>DORUCAK</h1>
+                <h1 className='text-white font-link text-3xl m-10'>DORUČAK</h1>
                 <hr className='text-white border-2 m-4' />
                 {hrana.map((meni, index) => {
                     return (
