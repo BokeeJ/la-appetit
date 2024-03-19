@@ -37,6 +37,9 @@ import NegaziraniSokovi from './NegaziraniSokovi';
 import { FaInstagram } from "react-icons/fa6";
 import { CiFacebook } from "react-icons/ci";
 import { IoWifiSharp } from "react-icons/io5";
+import Rakije from './Rakije';
+import Burger from './Burger';
+import { motion } from 'framer-motion'
 
 function Meni() {
     const [dorucakOpen, setDorucakOpen] = useState(false);
@@ -74,9 +77,12 @@ function Meni() {
     const [gaziraneVodeOpen, setGaziraneVodeOpen] = useState(false);
     const [gaziraniSokoviOpen, setGaziraniSokoviOpen] = useState(false);
     const [negaziraniSokoviOpen, setNegaziraniSokoviOpen] = useState(false);
+    const [rakijeOpen, setRakijeOpen] = useState(false);
+    const [burgerOpen, setBurgerOpen] = useState(false);
     const [meni1, setMeni1] = useState(false);
     const [meni2, setMeni2] = useState(false)
     const [meni3, setMeni3] = useState(false);
+
 
 
 
@@ -117,6 +123,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
 
 
     };
@@ -157,6 +165,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
 
 
     };
@@ -197,6 +207,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
 
     };
 
@@ -236,6 +248,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
 
     };
 
@@ -276,6 +290,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
     };
     const handlePredjelaClick = () => {
         setPredjelaOpen(!predjelaOpen);
@@ -313,6 +329,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
     };
     const handleCorbeClick = () => {
         setCorbeOpen(!corbeOpen);
@@ -350,6 +368,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
 
     }
     const handleObrokSalateClick = () => {
@@ -388,6 +408,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
     }
     const handlePasteClick = () => {
         setPasteOpen(!pasteOpen);
@@ -425,6 +447,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
     }
     const handlePiceClick = () => {
         setPiceOpen(!piceOpen);
@@ -462,6 +486,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
     }
     const handleRibeClick = () => {
         setRibeOpen(!ribeOpen);
@@ -499,6 +525,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
     }
     const handlePrilogClick = () => {
         setPrilogOpen(!prilogOpen);
@@ -536,6 +564,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
     }
     const handleSosClick = () => {
         setSosOpen(!sosOpen);
@@ -573,6 +603,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
     }
     const handleKokteliClick = () => {
         setKokteliOpen(!kokteliOpen);
@@ -610,6 +642,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
     }
     const handleViskiClick = () => {
         setViskiOpen(!viskiOpen);
@@ -647,6 +681,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
     }
     const handleKonjakClick = () => {
         setKonjakOpen(!konjakOpen);
@@ -684,6 +720,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
     }
     const handleLikeriVermutClick = () => {
         setLikeriVermutOpen(!likeriVermutOpen);
@@ -721,6 +759,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
     }
     const handleVodkaDzinClick = () => {
         setVodkaDzinOpen(!vodkaDzinOpen);
@@ -758,6 +798,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
     }
 
     const handleRumClick = () => {
@@ -796,6 +838,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
     }
     const handleTekilaClick = () => {
         setTekilaOpen(!tekilaOpen);
@@ -833,6 +877,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
     }
     const handleCrvenaVinaSrbClick = () => {
         setCrvenaVinaSrbOpen(!crvenaVinaSrbOpen)
@@ -871,6 +917,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
     }
     const handleVinoCasaClick = () => {
         setCrvenaVinaSrbOpen(false)
@@ -909,6 +957,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
     }
     const handleRozeVinaSrbClick = () => {
         setCrvenaVinaSrbOpen(false)
@@ -947,6 +997,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
     }
     const handleBelaVinaClick = () => {
         setCrvenaVinaSrbOpen(false)
@@ -985,6 +1037,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
     }
     const handleTopliNapiciClick = () => {
         setCrvenaVinaSrbOpen(false)
@@ -1023,6 +1077,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
     }
     const handleSpecijalKafeClick = () => {
         setCrvenaVinaSrbOpen(false)
@@ -1061,6 +1117,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
 
     }
     const handleVodeClick = () => {
@@ -1100,6 +1158,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
 
     }
     const handleFlasiranaPivaClick = () => {
@@ -1139,6 +1199,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
     }
     const handleTocenaPivaClick = () => {
         setCrvenaVinaSrbOpen(false)
@@ -1177,6 +1239,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
     }
     const handleSomerbsyClick = () => {
         setCrvenaVinaSrbOpen(false)
@@ -1215,6 +1279,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
     }
     const handleSveziCedjeniClick = () => {
         setCrvenaVinaSrbOpen(false)
@@ -1253,6 +1319,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
     }
     const handleEnergijaClick = () => {
         setCrvenaVinaSrbOpen(false)
@@ -1291,6 +1359,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
     }
     const handleGaziraneVodeClick = () => {
         setCrvenaVinaSrbOpen(false)
@@ -1329,6 +1399,8 @@ function Meni() {
         setGaziraneVodeOpen(!gaziraneVodeOpen);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
     }
     const handleGaziraniSokoviClick = () => {
         setCrvenaVinaSrbOpen(false)
@@ -1367,6 +1439,8 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(!gaziraniSokoviOpen);
         setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
 
     }
     const handleNegaziraniSokoviClick = () => {
@@ -1406,7 +1480,106 @@ function Meni() {
         setGaziraneVodeOpen(false);
         setGaziraniSokoviOpen(false);
         setNegaziraniSokoviOpen(!negaziraniSokoviOpen);
+        setRakijeOpen(false);
+        setBurgerOpen(false);
     }
+    const handleRakijeClick = () => {
+        setCrvenaVinaSrbOpen(false)
+        setTekilaOpen(false);
+        setCorbeOpen(false);
+        setDorucakOpen(false);
+        setSvezeSalateOpen(false);
+        setGlavnoJeloOpen(false);
+        setDesertOpen(false);
+        setSteakOpen(false);
+        setPredjelaOpen(false);
+        setObrokSalateOpen(false);
+        setPasteOpen(false);
+        setPiceOpen(false);
+        setRibeOpen(false);
+        setPrilogOpen(false);
+        setSosOpen(false);
+        setKokteliOpen(false);
+        setViskiOpen(false);
+        setKonjakOpen(false);
+        setLikeriVermutOpen(false);
+        setVodkaDzinOpen(false);
+        setRumOpen(false);
+        setTekilaOpen(false);
+        setVinoCasaOpen(false);
+        setRozeVinaSrbOpen(false);
+        setBelaVinaOpen(false);
+        setTopliNapiciOpen(false);
+        setSpecijalKafeOpen(false);
+        setVodeOpen(false);
+        setFlasiranaPivaOpen(false);
+        setTocenaPivaOpen(false);
+        setSomerbsyOpen(false);
+        setSveziCedjeniOpen(false);
+        setEnergijaOpen(false);
+        setGaziraneVodeOpen(false);
+        setGaziraniSokoviOpen(false);
+        setNegaziraniSokoviOpen(false);
+        setRakijeOpen(!rakijeOpen);
+        setBurgerOpen(false);
+    }
+    const handleBurgerClick = () => {
+        setCrvenaVinaSrbOpen(false)
+        setTekilaOpen(false);
+        setCorbeOpen(false);
+        setDorucakOpen(false);
+        setSvezeSalateOpen(false);
+        setGlavnoJeloOpen(false);
+        setDesertOpen(false);
+        setSteakOpen(false);
+        setPredjelaOpen(false);
+        setObrokSalateOpen(false);
+        setPasteOpen(false);
+        setPiceOpen(false);
+        setRibeOpen(false);
+        setPrilogOpen(false);
+        setSosOpen(false);
+        setKokteliOpen(false);
+        setViskiOpen(false);
+        setKonjakOpen(false);
+        setLikeriVermutOpen(false);
+        setVodkaDzinOpen(false);
+        setRumOpen(false);
+        setTekilaOpen(false);
+        setVinoCasaOpen(false);
+        setRozeVinaSrbOpen(false);
+        setBelaVinaOpen(false);
+        setTopliNapiciOpen(false);
+        setSpecijalKafeOpen(false);
+        setVodeOpen(false);
+        setFlasiranaPivaOpen(false);
+        setTocenaPivaOpen(false);
+        setSomerbsyOpen(false);
+        setSveziCedjeniOpen(false);
+        setEnergijaOpen(false);
+        setGaziraneVodeOpen(false);
+        setGaziraniSokoviOpen(false);
+        setNegaziraniSokoviOpen(false);
+        setRakijeOpen(false);
+        setBurgerOpen(!burgerOpen);
+    }
+    const fadeInAnimationVariants = {
+        initial: {
+            opacity: 0,
+            x: 100
+
+        },
+        animate: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                delay: 0.1,
+                duration: 3
+            }
+        }
+    }
+
+
     const handleMeni1 = () => {
         setMeni1(!meni1)
         setMeni2(false)
@@ -1425,95 +1598,116 @@ function Meni() {
 
 
     return (
+        <motion.div
+            variants={fadeInAnimationVariants}
+            initial='initial'
+            whileInView='animate'
+            viewport={{
+                once: true,
+            }}>
+            <div className='flex flex-col'>
 
-        <div className='flex flex-col'>
+                {/* Glavni Kontenjer Menija */}
+                {/* Jelovnik */}
+                <div className='text-white flex flex-col items-center p-5' >
+                    <h1 onClick={handleMeni1} className='text-white border-solid border-gray-dark hover:text-l hover:scale-125 hover:transition-all font-link border-2 bg-mis m-2 p-4 rounded-xl cursor-pointer w-[129px]'>JELOVNIK</h1>
+                    <div className={meni1 ? 'flex flex-col justify-center visible cursor-pointer items-center m-2 p-2 gap-1' : 'flex flex-col justify-center hidden items-center cursor-pointer'}>
+                        <button className={dorucakOpen ? 'border border-solid border-white rounded-xl p-2 visible' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleDorucakClick}>DORUČAK</button>
+                        {dorucakOpen && <Dorucak />}
+                        <button className={predjelaOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handlePredjelaClick}>PREDJELA</button>
+                        {predjelaOpen && <Predjela />}
+                        <button className={corbeOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleCorbeClick}>ČORBE</button>
+                        {corbeOpen && <Corbe />}
+                        <button className={glavnoJeloOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleGlavnoJeloClick}>GLAVNA JELA</button>
+                        {glavnoJeloOpen && <GlavnoJelo />}
+                        <button className={steakOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleSteakClick}>STEAK SELECTION</button>
+                        {steakOpen && <Steak />}
+                        <button className={burgerOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleBurgerClick}>BURGERI</button>
+                        {burgerOpen && <Burger />}
+                        <button className={obrokSalateOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleObrokSalateClick}>OBROK SALATE</button>
+                        {obrokSalateOpen && <ObrokSalate />}
+                        <button className={pasteOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handlePasteClick}>PASTE I RIŽOTA</button>
+                        {pasteOpen && <Paste />}
+                        <button className={piceOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handlePiceClick}>PIZZE</button>
+                        {piceOpen && <Pice />}
+                        <button className={ribeOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleRibeClick}>RIBA</button>
+                        {ribeOpen && <Ribe />}
+                        <button className={svezeSalateOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleSvezeSalateClick}>SVEŽE SALATE</button>
+                        {svezeSalateOpen && <SvezeSalate />}
+                        <button className={prilogOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handlePrilogClick}>PRILOZI</button>
+                        {prilogOpen && <Prilog />}
+                        <button className={sosOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleSosClick}>SOSEVI</button>
+                        {sosOpen && <Sos />}
+                        <button className={desertOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleDesertClick}>DESERT</button>
+                        {desertOpen && <Desert />}
 
-            {/* Glavni Kontenjer Menija */}
-            <div className='text-white flex flex-col items-center p-5' >
-                <h1 onClick={handleMeni1} className='text-white border-solid border-gray-dark hover:text-l hover:scale-125 hover:transition-all font-link border-2 bg-mis m-2 p-4 rounded-xl cursor-pointer w-[129px]'>JELOVNIK</h1>
-                <div className={meni1 ? 'flex flex-col justify-center visible cursor-pointer items-center m-2 p-2 gap-1' : 'flex flex-col justify-center hidden items-center cursor-pointer'}>
-                    <button className={dorucakOpen ? 'border border-solid border-white rounded-xl p-2 visible' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleDorucakClick}>DORUČAK</button>
-                    {dorucakOpen && <Dorucak />}
-                    <button className={glavnoJeloOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleGlavnoJeloClick}>GLAVNA JELA</button>
-                    {glavnoJeloOpen && <GlavnoJelo />}
-                    <button className={predjelaOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handlePredjelaClick}>PREDJELA</button>
-                    {predjelaOpen && <Predjela />}
-                    <button className={pasteOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handlePasteClick}>PASTE I RIŽE</button>
-                    {pasteOpen && <Paste />}
-                    <button className={piceOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handlePiceClick}>PICE</button>
-                    {piceOpen && <Pice />}
-                    <button className={ribeOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleRibeClick}>RIBE</button>
-                    {ribeOpen && <Ribe />}
-                    <button className={svezeSalateOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleSvezeSalateClick}>SVEŽE SALATE</button>
-                    {svezeSalateOpen && <SvezeSalate />}
-                    <button className={prilogOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handlePrilogClick}>PRILOG</button>
-                    {prilogOpen && <Prilog />}
-                    <button className={sosOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleSosClick}>SOSEVI</button>
-                    {sosOpen && <Sos />}
-                    <button className={desertOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleDesertClick}>DESERT</button>
-                    {desertOpen && <Desert />}
-                    <button className={steakOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleSteakClick}>STEAK SELECTION</button>
-                    {steakOpen && <Steak />}
-                    <button className={corbeOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleCorbeClick}>ČORBE</button>
-                    {corbeOpen && <Corbe />}
-                    <button className={obrokSalateOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleObrokSalateClick}>OBROK SALATE</button>
-                    {obrokSalateOpen && <ObrokSalate />}
-                </div>
-                <h1 onClick={handleMeni2} className='text-white border-solid border-gray-dark hover:text-l hover:scale-125 hover:transition-all font-link border-2 bg-mis m-2 p-4 rounded-xl cursor-pointer'>KARTA PIĆA</h1>
-                <div className={meni2 ? 'flex flex-col justify-center visible cursor-pointer items-center m-2 p-2 gap-1 ' : 'flex flex-col justify-center items-center hidden cursor-pointer'}>
 
-                    <button className={kokteliOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-gray'} onClick={handleKokteliClick}>KOKTELI</button>
-                    {kokteliOpen && <Kokteli />}
-                    <button className={viskiOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleViskiClick}>VISKI</button>
-                    {viskiOpen && <Viski />}
-                    <button className={konjakOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleKonjakClick}>KONJAK</button>
-                    {konjakOpen && <Konjak />}
-                    <button className={likeriVermutOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleLikeriVermutClick}>LIKERI I VERMUTI</button>
-                    {likeriVermutOpen && <LikeriVermut />}
-                    <button className={vodkaDzinOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleVodkaDzinClick}>VODKA I DŽIN</button>
-                    {vodkaDzinOpen && <VodkaDzin />}
-                    <button className={rumOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleRumClick}>RUM</button>
-                    {rumOpen && <Rum />}
-                    <button className={tekilaOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleTekilaClick}>TEKILA</button>
-                    {tekilaOpen && <Tekila />}
-                    <button className={topliNapiciOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleTopliNapiciClick}>TOPLI NAPICI</button>
-                    {topliNapiciOpen && <TopliNapici />}
-                    <button className={specijalKafeOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleSpecijalKafeClick}>SPECIJAL KAFE</button>
-                    {specijalKafeOpen && <SpecijalKafe />}
-                    <button className={vodeOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleVodeClick}>VODE</button>
-                    {vodeOpen && <Vode />}
-                    <button className={flasiranaPivaOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleFlasiranaPivaClick}>FLAŠIRANA PIVA</button>
-                    {flasiranaPivaOpen && <FlasiranaPiva />}
-                    <button className={tocenaPivaOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleTocenaPivaClick}>TOČENA PIVA</button>
-                    {tocenaPivaOpen && <TocenaPiva />}
-                    <button className={somerbsyOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleSomerbsyClick}>SOMERBSY</button>
-                    {somerbsyOpen && <Somerbsy />}
-                    <button className={sveziCedjeniOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleSveziCedjeniClick}>SVEŽE CEĐENI SOKOVI</button>
-                    {sveziCedjeniOpen && <SveziCedjeni />}
-                    <button className={energijaOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleEnergijaClick}>ENERGETSKI NAPICI</button>
-                    {energijaOpen && <Energija />}
-                    <button className={gaziraneVodeOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleGaziraneVodeClick}>GAZIRANE VODE</button>
-                    {gaziraneVodeOpen && <GaziraneVode />}
-                    <button className={gaziraniSokoviOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleGaziraniSokoviClick}>GAZIRANI SOKOVI</button>
-                    {gaziraniSokoviOpen && <GaziraniSokovi />}
-                    <button className={negaziraniSokoviOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleNegaziraniSokoviClick}>NEGAZIRANI SOKOVI</button>
-                    {negaziraniSokoviOpen && <NegaziraniSokovi />}
-                </div>
-                <h1 onClick={handleMeni3} className='text-white border-solid border-gray-dark hover:text-l hover:scale-125 hover:transition-all font-link border-2 bg-mis m-2 p-4 rounded-xl cursor-pointer'>KARTA VINA</h1>
-                <div className={meni3 ? 'flex flex-col justify-center visible cursor-pointer items-center m-2 p-2 gap-1' : 'flex flex-col items-center justify-center hidden cursor-pointer'}>
-                    <button className={crvenaVinaSrbOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleCrvenaVinaSrbClick}>CRVENA VINA SRBIJE</button>
-                    {crvenaVinaSrbOpen && <CrvenaVinaSrb />}
-                    <button className={vinoCasaOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleVinoCasaClick}>VINO NA ČAŠU</button>
-                    {vinoCasaOpen && <VinoCasa />}
-                    <button className={rozeVinaSrbOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleRozeVinaSrbClick}>ROZE VINA SRBIJE</button>
-                    {rozeVinaSrbOpen && <RozeVinaSrb />}
-                    <button className={belaVinaOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleBelaVinaClick}>BELA VINA</button>
-                    {belaVinaOpen && <BelaVina />}
 
-                </div>
+
+
+
+
+                    </div>
+                    {/* karta pica */}
+                    <h1 onClick={handleMeni2} className='text-white border-solid border-gray-dark hover:text-l hover:scale-125 hover:transition-all font-link border-2 bg-mis m-2 p-4 rounded-xl cursor-pointer'>KARTA PIĆA</h1>
+                    <div className={meni2 ? 'flex flex-col justify-center visible cursor-pointer items-center m-2 p-2 gap-1 ' : 'flex flex-col justify-center items-center hidden cursor-pointer'}>
+
+                        <button className={topliNapiciOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleTopliNapiciClick}>TOPLI NAPICI</button>
+                        {topliNapiciOpen && <TopliNapici />}
+                        <button className={specijalKafeOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleSpecijalKafeClick}>SPECIJALITETI OD KAFE</button>
+                        {specijalKafeOpen && <SpecijalKafe />}
+                        <button className={vodeOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleVodeClick}>NEGAZIRANE VODE</button>
+                        {vodeOpen && <Vode />}
+                        <button className={gaziraneVodeOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleGaziraneVodeClick}>GAZIRANE VODE</button>
+                        {gaziraneVodeOpen && <GaziraneVode />}
+                        <button className={gaziraniSokoviOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleGaziraniSokoviClick}>GAZIRANI SOKOVI</button>
+                        {gaziraniSokoviOpen && <GaziraniSokovi />}
+                        <button className={negaziraniSokoviOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleNegaziraniSokoviClick}>NEGAZIRANI SOKOVI</button>
+                        {negaziraniSokoviOpen && <NegaziraniSokovi />}
+                        <button className={sveziCedjeniOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleSveziCedjeniClick}>SVEŽE CEĐENI SOKOVI</button>
+                        {sveziCedjeniOpen && <SveziCedjeni />}
+                        <button className={energijaOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleEnergijaClick}>ENERGETSKI NAPICI</button>
+                        {energijaOpen && <Energija />}
+                        <button className={flasiranaPivaOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleFlasiranaPivaClick}>FLAŠIRANA PIVA</button>
+                        {flasiranaPivaOpen && <FlasiranaPiva />}
+                        <button className={tocenaPivaOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleTocenaPivaClick}>TOČENA PIVA</button>
+                        {tocenaPivaOpen && <TocenaPiva />}
+                        <button className={somerbsyOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleSomerbsyClick}>SOMERBSY</button>
+                        {somerbsyOpen && <Somerbsy />}
+                        <button className={rakijeOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleRakijeClick}>RAKIJE SRBIJE</button>
+                        {rakijeOpen && <Rakije />}
+                        <button className={likeriVermutOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleLikeriVermutClick}>LIKERI I VERMUTI</button>
+                        {likeriVermutOpen && <LikeriVermut />}
+                        <button className={vodkaDzinOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleVodkaDzinClick}>VODKA I DŽIN</button>
+                        {vodkaDzinOpen && <VodkaDzin />}
+                        <button className={rumOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleRumClick}>RUM</button>
+                        {rumOpen && <Rum />}
+                        <button className={tekilaOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleTekilaClick}>TEKILA</button>
+                        {tekilaOpen && <Tekila />}
+                        <button className={viskiOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleViskiClick}>VISKI</button>
+                        {viskiOpen && <Viski />}
+                        <button className={konjakOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleKonjakClick}>KONJAK</button>
+                        {konjakOpen && <Konjak />}
+                        <button className={kokteliOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-gray'} onClick={handleKokteliClick}>KOKTELI</button>
+                        {kokteliOpen && <Kokteli />}
+                    </div>
+                    {/* desert
+                 */}
+                    <h1 onClick={handleMeni3} className='text-white border-solid border-gray-dark hover:text-l hover:scale-125 hover:transition-all font-link border-2 bg-mis m-2 p-4 rounded-xl cursor-pointer'>KARTA VINA</h1>
+                    <div className={meni3 ? 'flex flex-col justify-center visible cursor-pointer items-center m-2 p-2 gap-1' : 'flex flex-col items-center justify-center hidden cursor-pointer'}>
+                        <button className={belaVinaOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleBelaVinaClick}>BELA VINA</button>
+                        {belaVinaOpen && <BelaVina />}
+                        <button className={crvenaVinaSrbOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleCrvenaVinaSrbClick}>CRVENA VINA SRBIJE</button>
+                        {crvenaVinaSrbOpen && <CrvenaVinaSrb />}
+                        <button className={rozeVinaSrbOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleRozeVinaSrbClick}>ROZE VINA SRBIJE</button>
+                        {rozeVinaSrbOpen && <RozeVinaSrb />}
+                        <button className={vinoCasaOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleVinoCasaClick}>VINO NA ČAŠU</button>
+                        {vinoCasaOpen && <VinoCasa />}
+                    </div>
+                </div >
+
             </div >
-
-        </div >
+        </motion.div>
     );
 }
 

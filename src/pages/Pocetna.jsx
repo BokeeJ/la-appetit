@@ -30,8 +30,8 @@ function Pocetna() {
             </div>
             {/* container */}
             <div className='flex w-full flex-col lg:flex-row justify-between gap-5 p-10'>
-                <div className='flex flex-col border-solid border-2 border-gray lg:h-[450px] lg:w-[300px] h-[200px] w-full bg-mis text-white items-center rounded-2xl   lg:ml-5  rounded-lg transition-transform relative  overflow-hidden'>
-                    <img className='h-full w-full rounded-md absolute top-0 left-0 transition-transform duration-[8000ms] transform-gpu hover:scale-150' src="/menikarta.jpg" alt="ZaricRakija" />
+                <div className='lex flex-col border-solid border-2 border-gray lg:h-[450px] lg:w-[300px] h-[200px] w-full bg-mis text-white items-center rounded-2xl   lg:mr-5  rounded-lg transition-transform relative  overflow-hidden '>
+                    <img className='h-full w-full rounded-md absolute top-0 left-0 transition-transform duration-[8000ms] transform-gpu hover:scale-150' src="/dveCase.jpg" alt="ZaricRakija" />
 
                 </div>
                 <motion.div variants={fadeInAnimationVariants}
@@ -48,7 +48,7 @@ function Pocetna() {
                     <Link to={'/Onama'}>
                         <h2 className='text-white font-naslovni border-2 rounded-xl p-2 border-white border-solid mt-6 text-xl hover:opacity-55 hover:border-opacity-50'>VIŠE O NAMA</h2></Link>
                 </motion.div>
-                <div className='lex flex-col border-solid border-2 border-gray lg:h-[450px] lg:w-[300px] h-[200px] w-full bg-mis text-white items-center rounded-2xl   lg:mr-5  rounded-lg transition-transform relative  overflow-hidden'>
+                <div className='lex flex-col border-solid border-2 border-gray lg:h-[450px] lg:w-[300px] h-[200px] w-full bg-mis text-white items-center rounded-2xl   lg:mr-5  rounded-lg transition-transform relative  overflow-hidden  '>
                     <img className='h-full w-full  rounded-md absolute top-0 left-0 transition-transform duration-[8000ms] transform-gpu hover:scale-150' src="/vino.jpg" alt="Elegancija" />
 
                 </div>
@@ -82,22 +82,22 @@ function Pocetna() {
                 <div className='flex lg:flex-row md:flex-row flex-wrap items-center justify-center w-full h-full gap-2 lg:gap-4 md:gap-3 m-3'>
                     <div className='flex justify-center items-center flex-col text-white items-center font-naslovni text-xl border border-solid p-2 border-gray rounded-2xl'>
                         <img className='h-[300px] w-[300px]  p-4 rounded-xl' src="/burger2024.JPG" alt="burger" />
-                        <span className='text-4xl'>Burger</span>
+                        <span className='text-xl'>BURGER CLASSIC</span>
 
                     </div>
                     <div className='flex justify-center items-center flex-col text-white items-center font-naslovni text-xl border border-solid p-2 border-gray rounded-2xl'>
                         <img className='h-[300px] w-[300px]  rounded-xl p-4' src="/20242.jpg" alt="meso2" />
-                        <span className='text-4xl'>Svinjski biftek</span>
+                        <span className='text-xl'>BIFTEK ŽAR</span>
 
                     </div>
                     <div className='flex justify-center items-center flex-col text-white items-center font-naslovni text-xl border border-solid p-2 border-gray rounded-2xl'>
                         <img className='h-[300px] w-[300px]  rounded-xl p-4' src="/biftek.jpg" alt="biftek"></img>
-                        <span className='text-4xl'>Krvavi biftek</span>
+                        <span className='text-xl'>BIFTEK U ULJU</span>
 
                     </div>
                     <div className='flex justify-center items-center flex-col text-white items-center font-naslovni text-xl border border-solid p-2 border-gray rounded-2xl'>
                         <img className='h-[300px] w-[300px] rounded-xl p-4' src="/losos.jpg" alt="losos"></img>
-                        <span className='text-4xl'>Losos</span>
+                        <span className='text-xl'>LOSOS NA ŽARU</span>
 
                     </div>
 

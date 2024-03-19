@@ -74,7 +74,7 @@ function Footer() {
                             <h3 className='text-white text-[16px] font-link'>+381 69 784 050</h3>
                         </div>
                         <div className='flex flex-row gap-3 items-center'> <CiMail color='white' size={35} />
-                            <h3 className='text-white mr-5 text-l font-link'>Restoran.la.appetit@gmail.com</h3>
+                            <h3 className='text-white mr-5 text-l font-link'>restoran.la.appetit@gmail.com</h3>
                         </div>
 
                     </div>
