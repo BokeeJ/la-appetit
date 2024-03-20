@@ -68,7 +68,9 @@ function Galerija() {
     return (
         <div className="flex flex-col items-center relative">
             {/* Glavna slika */}
+
             <div className="relative mt-8">
+
                 <motion.img
                     key={images[currentIndex].id}
                     className=" lg:w-[900px] lg:h-[600px] w-[400px] h-[350px] md:w-[600px] md:h-[400px] rounded-2xl"
@@ -79,12 +81,14 @@ function Galerija() {
                     transition={{ duration: 0.5 }}
                 />
                 {/* Strelice */}
+                <div className='text-white font-link text-xl text-gray'>{`${currentIndex} of ${images.length}`}</div>
                 <div>
                     <GrLinkPrevious size={30} className="absolute top-1/2 left-0 transform -translate-y-1/2 cursor-pointer text-white" onClick={goToPrevious} />
                 </div>
                 <div>
                     <GrLinkNext size={30} className="absolute top-1/2 right-0 transform -translate-y-1/2 cursor-pointer text-white" onClick={goToNext} />
                 </div>
+
             </div>
 
             {/* Male slike */}

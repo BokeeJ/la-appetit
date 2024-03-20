@@ -3,6 +3,7 @@ import Navbar from "./Components/Navbar"
 import Footer from "./Components/Footer"
 import ScrollToTop from "./Components/ScrollToTop"
 
+
 function App() {
 
 
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Outlet />
       <Footer />
+
     </div >
   )
 

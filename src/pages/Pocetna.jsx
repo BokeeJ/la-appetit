@@ -3,11 +3,18 @@ import React from 'react'
 import { IoIosRestaurant } from "react-icons/io";
 import { Link } from 'react-router-dom';
 import { GiCakeSlice } from "react-icons/gi";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 //motion
 import { motion } from 'framer-motion'
 function Pocetna() {
+    const slike = [
+        "/burger2024.JPG",
+        "/20242.jpg",
+        "/20242.jpg",
+        "/losos.jpg"
 
+    ]
     const fadeInAnimationVariants = {
         initial: {
             opacity: 0,
