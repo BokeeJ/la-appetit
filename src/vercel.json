@@ -1,32 +1,12 @@
 {
+    "version":2,
+    "builds": [
+      { "src": "*.js", "use": "@vercel/node" }
+    ],
     "routes": [
         {
-            'src': '/',
-            'dest': '/',
-          },
-          {
-            'src': '/Onama',
-            'dest': '/'
-          },
-          {
-            'src': '/meni',
-            'dest': '/',
-          },
-          {
-            'src': '/kontakt',
-            'dest': "/",
-          },
-          {
-            'src': '/galerija',
-            'dest': '/',
-          },
-          {
-            'src': '/desert',
-            'dest': '/',
-          },
-          {
-            'src': '/dorucak',
-            'dest': '/',
-          }
+          "src": "/(.*)",
+          "dest": "/"
+        }
     ]
-}
+  }
