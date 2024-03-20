@@ -1,3 +1,32 @@
 {
-    "rewrites":[{"sourse":"/(.*)", "destination": "/"}]
+    "routes": [
+        {
+            'src': '/',
+            'dest': '/',
+          },
+          {
+            'src': '/Onama',
+            'dest': '/'
+          },
+          {
+            'src': '/meni',
+            'dest': '/',
+          },
+          {
+            'src': '/kontakt',
+            'dest': "/",
+          },
+          {
+            'src': '/galerija',
+            'dest': '/',
+          },
+          {
+            'src': '/desert',
+            'dest': '/',
+          },
+          {
+            'src': '/dorucak',
+            'dest': '/',
+          }
+    ]
 }
