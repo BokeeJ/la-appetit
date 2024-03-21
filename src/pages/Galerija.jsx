@@ -23,7 +23,7 @@ function Galerija() {
     }
 
     const images = [
-        { id: 1, path: "/1.webp" },
+        { id: 1, path: "/stepenice.webp" },
         { id: 2, path: "/2.webp" },
         { id: 3, path: "/3.webp" },
         { id: 4, path: "/4.webp" },
@@ -57,7 +57,12 @@ function Galerija() {
         { id: 32, path: "/KolacSaMakom.webp" },
         { id: 33, path: "/PitasaVisnjama.webp" },
         { id: 34, path: "/pocetnaDesert.webp" },
-        { id: 35, path: "/pozadinaPocetna.webp" }
+        { id: 35, path: "/pozadinaPocetna.webp" },
+        { id: 36, path: "/30.webp" },
+        { id: 37, path: "/31.webp" },
+        { id: 38, path: "/32.webp" },
+        { id: 39, path: "/33.webp" },
+        { id: 40, path: "/34.webp" },
 
     ];
 
