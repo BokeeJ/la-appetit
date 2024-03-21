@@ -62,6 +62,8 @@ function Galerija() {
         { id: 37, path: "/37.webp" },
         { id: 38, path: "/38.webp" },
         { id: 39, path: "/39.webp" },
+        { id: 40, path: "/4.webp" },
+
 
 
 
