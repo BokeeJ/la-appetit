@@ -86,7 +86,7 @@ function Navbar() {
                                 <ul className={`flex flex-col lg:invisible md:invisible lg:flex-row md:flex-row  w-full lg:gap-16 gap-1 p-1 `}>
                                     <NavLink to="/" className='text-white font-linkovi hover transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>POČETNA</NavLink>
                                     <NavLink to="/meni" className='text-white font-link  transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>MENI</NavLink>
-                                    <NavLink to="/kontakt" className='text-white font-link transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>PROSLAVE</NavLink>
+                                    <NavLink to="/proslave" className='text-white font-link transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>PROSLAVE</NavLink>
                                     <NavLink to="/galerija" className='text-white font-link transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>GALERIJA</NavLink>
                                     <NavLink to="/Onama" className='text-white font-link transition-transform duration-300 transform-gpu scale-100 hover:scale-125'>O NAMA</NavLink>
 
