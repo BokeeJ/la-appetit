@@ -40,7 +40,7 @@ function Footer() {
                     }} className='flex flex-col lg:w-[200px] w-full h-full gap-3 justify-center items-center '
                 >
                     <div className='flex items-center  flex-col'>
-                        <img className='w-[300px]  h-[150] rounded-3xl' src="/sodapdf-converted_Page_1.jpeg" alt="LA APPETIT" />
+                        <img className='w-[300px]  h-[150] rounded-3xl' src="/footer.webp" alt="LA APPÉTIT" />
                     </div>
                     {/* social network */}
                     <div className='flex flex-col gap-5 p-5 '>
@@ -65,7 +65,7 @@ function Footer() {
                         <ul className='flex flex-col items-center gap-8 text-sm text-white mt-10'>
                             <Link to={'/'} className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>POČETNA</Link>
                             <Link to={'/meni'} className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>MENI</Link>
-                            <Link to={'/kontakt'} className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>PROSLAVE</Link>
+                            <Link to={'/proslave'} className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>PROSLAVE</Link>
                             <Link to={'/galerija'} className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>GALERIJA</Link>
                             <Link to={'/Onama'} className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125 font-link text-[16px]'>O NAMA</Link>
 
@@ -105,19 +105,21 @@ function Footer() {
                             <CiClock1 color='white' size={35} />
 
                             <div className='flex flex-col gap-3'>
-                                <div>
-                                    <p className='text-white text-[18px] font-link '>Ponedeljak-Nedelja </p>
-
+                                <div className='flex flex-col'>
+                                    <p className='text-white text-[18px] font-link '>Pon-Nedelja </p>
                                     <p className='text-white text-[18px] font-link'> 08:00h - 23:00h</p>
                                 </div>
-                                <p className='text-white text-[18px] font-link'>Petak-<br />Subota  <br />08:00h - 00:00h</p>
+                                <div className='flex flex-col'>
+                                    <p className='text-white text-[18px] font-link'>Petak - Subota </p>
+                                    <p className='text-white text-[18px] font-link'> 08:00h - 00:00h</p>
+                                </div>
                             </div>
                         </div>
 
                     </div>
                 </div>
             </div>
-            <div className='text-white bottom-0 right-0 absolute lg:m-2 lg:mr-2 md:mr-2 md:m-2 mr-10'><p className='font-link'>© Copyright La Appetit </p></div>
+            <div className='text-white bottom-0 right-0 absolute lg:m-2 lg:mr-2 md:mr-2 md:m-2 mr-10'><p className='font-link'>© Copyright LA APPÉTIT </p></div>
         </div>
 
     )

@@ -23,45 +23,41 @@ function Galerija() {
     }
 
     const images = [
-        { id: 1, path: "/1.jpg" },
-        { id: 2, path: "/2.jpg" },
-        { id: 3, path: "/3.jpg" },
-        { id: 4, path: "/4.jpg" },
-        { id: 5, path: "/5.jpg" },
-        { id: 6, path: "/6.jpg" },
-        { id: 7, path: "/7.jpg" },
-        { id: 8, path: "/8.jpg" },
-        { id: 9, path: "/9.jpg" },
-        { id: 10, path: "/10.jpg" },
-        { id: 11, path: "/11.jpg" },
-        { id: 12, path: "/12.jpg" },
-        { id: 13, path: "/13.jpg" },
-        { id: 14, path: "/14.jpg" },
-        { id: 15, path: "/15.jpg" },
-        { id: 16, path: "/16.jpg" },
-        { id: 17, path: "/17.jpg" },
-        { id: 18, path: "/18.jpg" },
-        { id: 19, path: "/19.jpg" },
-        { id: 20, path: "/20.jpg" },
-        { id: 21, path: "/21.jpg" },
-        { id: 22, path: "/22.jpg" },
-        { id: 23, path: "/23.jpg" },
-        { id: 24, path: "/24.jpg" },
-        { id: 25, path: "/25.jpg" },
-        { id: 26, path: "/26.jpg" },
-        { id: 27, path: "/27.jpg" },
-        { id: 28, path: "/28.jpg" },
-        { id: 29, path: "/29.jpg" },
-        { id: 30, path: "/30.jpg" },
-        { id: 31, path: "/31.jpg" },
-        { id: 32, path: "/32.jpg" },
-        { id: 33, path: "/33.jpg" },
-        { id: 34, path: "/34.jpg" },
-        { id: 35, path: "/35.jpg" },
-        { id: 36, path: "/36.jpg" },
-        { id: 37, path: "/37.jpg" },
-        { id: 38, path: "/38.jpg" },
-
+        { id: 1, path: "/1.webp" },
+        { id: 2, path: "/2.webp" },
+        { id: 3, path: "/3.webp" },
+        { id: 4, path: "/4.webp" },
+        { id: 5, path: "/5.webp" },
+        { id: 6, path: "/6.webp" },
+        { id: 7, path: "/7.webp" },
+        { id: 8, path: "/8.webp" },
+        { id: 9, path: "/9.webp" },
+        { id: 10, path: "/10.webp" },
+        { id: 11, path: "/11.webp" },
+        { id: 12, path: "/12.webp" },
+        { id: 13, path: "/13.webp" },
+        { id: 14, path: "/14.webp" },
+        { id: 15, path: "/15.webp" },
+        { id: 16, path: "/16.webp" },
+        { id: 17, path: "/17.webp" },
+        { id: 18, path: "/18.webp" },
+        { id: 19, path: "/19.webp" },
+        { id: 20, path: "/20.webp" },
+        { id: 21, path: "/21.webp" },
+        { id: 22, path: "/22.webp" },
+        { id: 23, path: "/23.webp" },
+        { id: 24, path: "/24.webp" },
+        { id: 25, path: "/25.webp" },
+        { id: 26, path: "/26.webp" },
+        { id: 27, path: "/27.webp" },
+        { id: 28, path: "/28.webp" },
+        { id: 29, path: "/29.webp" },
+        { id: 30, path: "/biftekUlje.webp" },
+        { id: 31, path: "/biftekZar.webp" },
+        { id: 32, path: "/KolacSaMakom.webp" },
+        { id: 33, path: "/PitasaVisnjama.webp" },
+        { id: 34, path: "/pocetnaDesert.webp" },
+        { id: 35, path: "/pozadinaPocetna.webp" }
 
     ];
 
@@ -92,7 +88,7 @@ function Galerija() {
             </div>
 
             {/* Male slike */}
-            <div className="flex flex-wrap md:flex-row lg:flex-row justify-center mt-4">
+            <div className="flex flex-wrap md:flex-row lg:flex-row justify-center mt-4 cursor-pointer gap-2">
                 {images.map((image, index) => (
                     <img
                         key={image.id}

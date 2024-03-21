@@ -1566,15 +1566,15 @@ function Meni() {
     const fadeInAnimationVariants = {
         initial: {
             opacity: 0,
-            x: 100
+            x: 50
 
         },
         animate: {
-            opacity: 1,
+            opacity: 3,
             x: 0,
             transition: {
-                delay: 0.1,
-                duration: 3
+                delay: 0.3,
+                duration: 4
             }
         }
     }
@@ -1598,6 +1598,7 @@ function Meni() {
 
 
     return (
+
         <motion.div
             variants={fadeInAnimationVariants}
             initial='initial'

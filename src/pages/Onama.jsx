@@ -19,7 +19,7 @@ function Onama() {
     }
     return (
         <div className='flex flex-col'>
-            <div className="w-full  h-96 bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: 'url("/6.jpg")' }}>
+            <div className="w-full  h-96 bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: 'url("/13.webp")' }}>
 
             </div>
 
@@ -46,8 +46,8 @@ function Onama() {
             </motion.div >
             <div className="w-full h-full flex flex-col md:flex-col lg:flex-row items-center gap-10 justify-center">
 
-                <img className='object-cover h-[300px] rounded-3xl ' src="/pozadina.jpg" alt="" />
-                <img className='object-cover h-[300px] rounded-3xl' src="/ulaz.jpeg" alt="" />
+                <img className='object-cover h-[300px] rounded-3xl ' src="/SlikaJelovnik2.webp" alt="" />
+                <img className='object-cover h-[300px] rounded-3xl' src="/ulaz.webp" alt="" />
 
 
             </div>

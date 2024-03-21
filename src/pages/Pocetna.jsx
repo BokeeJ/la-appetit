@@ -33,15 +33,15 @@ function Pocetna() {
     return (
         <div className='w-full' >
             {/* cover slika */}
-            <div className="w-full  h-96 bg-cover bg-center" style={{ backgroundImage: 'url("/5.jpg")' }}>
+            <div className="w-full  h-96 bg-cover bg-center" style={{ backgroundImage: 'url("/pozadinaPocetna.webp")' }}>
             </div>
             {/* container */}
             <div className='flex flex-col lg:flex-row md:flex-row justify-between p-10 gap-3'>
                 <div className='flex flex-col border-solid border-2 border-gray lg:h-[450px] lg:w-[800px] md:w-[700px] h-[500px] bg-mis text-white  items-center rounded-2xl  rounded-lg transition-transform relative overflow-hidden'>
-                    <img className='h-full w-full rounded-md absolute top-0 left-0 transition-transform duration-[8000ms] transform-gpu hover:scale-150 object-cover' src="/dveCase.jpg" alt="ZaricRakija" />
+                    <img className='h-full w-full rounded-md absolute top-0 left-0 transition-transform duration-[8000ms] transform-gpu hover:scale-150 object-cover' src="/slika2case.webp" alt="ZaricRakija" />
                 </div>
-                <motion.div variants={fadeInAnimationVariants} initial='initial' whileInView='animate' viewport={{ once: true }} className='bg-black h-full w-full flex flex-col items-center p-5 border border-gray-300 shadow-md hover:scale-125 transition-transform rounded-2xl lg:justify-center border-solid border-gray border-2'>
-                    <h1 className='font-naslovni text-white flex flex-row items-center gap-2'><span className='text-4xl font-naslovni'>LA APPETIT </span><IoIosRestaurant size={40} /></h1>
+                <motion.div variants={fadeInAnimationVariants} initial='initial' whileInView='animate' viewport={{ once: true }} className='bg-black h-full lg:h-[450px] md:h-[500px] w-full flex flex-col items-center p-5 border border-gray-300 shadow-md hover:scale-125 transition-transform rounded-2xl lg:justify-center border-solid border-gray border-2'>
+                    <h1 className='font-naslovni text-white flex flex-row items-center gap-2'><span className='text-4xl font-naslovni'>LA APPÉTIT</span><IoIosRestaurant size={40} /></h1>
                     <hr className='w-full my-2 border-t border-gray-400 text-white mt-5' />
                     <span className='text-white lg:text-xl font-link text-xl md:text-[16px]'>Mesto gde se susreću raskoš i harmonija, stvarajući jedinstveno iskustvo koje će Vas inspirirati iznova i iznova.
                         U LA APPETITU, hrana postaje umetnost, a svaki obrok je prilika za stvaranje nezaboravnih trenutaka. Dobrodošli u dom ukusa i elegancije.
@@ -51,12 +51,12 @@ function Pocetna() {
                     </Link>
                 </motion.div>
                 <div className='flex flex-col border-solid border-2 border-gray lg:h-[450px] lg:w-[800px] h-[500px] md:w-[700px] w-full bg-mis text-white items-center justify-center rounded-2xl  rounded-lg transition-transform relative overflow-hidden'>
-                    <img className='h-full w-full cover-object rounded-md absolute top-0 left-0 transition-transform duration-[8000ms] transform-gpu hover:scale-150 object-cover' src="/vino.jpg" alt="Elegancija" />
+                    <img className='h-full w-full cover-object rounded-md absolute top-0 left-0 transition-transform duration-[8000ms] transform-gpu hover:scale-150 object-cover' src="/KolacSaMakom.webp" alt="Elegancija" />
                 </div>
             </div>
 
             {/* JELOVNIK/KOMPLETAN MENI */}
-            <div className="w-full relative h-96 bg-cover bg-center p-5 flex items-center justify-center" style={{ backgroundImage: 'url("/enterijer.jpg")' }}>
+            <div className="w-full relative h-96 bg-cover bg-center p-5 flex items-center justify-center" style={{ backgroundImage: 'url("/dorucakmeni.webp")' }}>
                 <div className='absolute w-full h-full p-5 bg-black top-0 opacity-50'></div>
                 <motion.div
                     variants={fadeInAnimationVariants}
@@ -82,22 +82,22 @@ function Pocetna() {
                 <hr className='border-gray border-solid w-[40%] m-5' />
                 <div className='flex lg:flex-row md:flex-row flex-wrap items-center justify-center w-full h-full gap-2 lg:gap-4 md:gap-3 m-3'>
                     <div className='flex justify-center items-center flex-col text-white items-center font-naslovni text-xl border border-solid p-2 border-gray rounded-2xl'>
-                        <img className='h-[300px] w-[300px]  p-4 rounded-xl' src="/burger2024.JPG" alt="burger" />
+                        <img className='h-[300px] w-[300px]  p-4 rounded-xl' src="/9.webp" alt="burger" />
                         <span className='text-xl'>BURGER CLASSIC</span>
 
                     </div>
                     <div className='flex justify-center items-center flex-col text-white items-center font-naslovni text-xl border border-solid p-2 border-gray rounded-2xl'>
-                        <img className='h-[300px] w-[300px]  rounded-xl p-4' src="/20242.jpg" alt="meso2" />
+                        <img className='h-[300px] w-[300px]  rounded-xl p-4' src="/biftekZar.webp" alt="meso2" />
                         <span className='text-xl'>BIFTEK ŽAR</span>
 
                     </div>
                     <div className='flex justify-center items-center flex-col text-white items-center font-naslovni text-xl border border-solid p-2 border-gray rounded-2xl'>
-                        <img className='h-[300px] w-[300px]  rounded-xl p-4' src="/biftek.jpg" alt="biftek"></img>
+                        <img className='h-[300px] w-[300px]  rounded-xl p-4' src="/biftekUlje.webp" alt="biftek"></img>
                         <span className='text-xl'>BIFTEK U ULJU</span>
 
                     </div>
                     <div className='flex justify-center items-center flex-col text-white items-center font-naslovni text-xl border border-solid p-2 border-gray rounded-2xl'>
-                        <img className='h-[300px] w-[300px] rounded-xl p-4' src="/losos.jpg" alt="losos"></img>
+                        <img className='h-[300px] w-[300px] rounded-xl p-4' src="/29.webp" alt="losos"></img>
                         <span className='text-xl'>LOSOS NA ŽARU</span>
 
                     </div>
@@ -111,7 +111,7 @@ function Pocetna() {
                 viewport={{
                     once: true,
                 }}
-                className="w-full h-96 bg-cover bg-center mt-1 border-4 border-black border-b-8 border-opacity-100 flex items-center justify-center" style={{ backgroundImage: 'url("/19.jpg")' }}>
+                className="w-full h-96 bg-cover bg-center mt-1 border-4 border-black border-b-8 border-opacity-100 flex items-center justify-center" style={{ backgroundImage: 'url("/pocetnaDesert.webp")' }}>
                 <div className='w-full h-full bg-cover bg-center border-4 border-black border-b-8  bg-black opacity-50'></div>
                 <motion.div variants={fadeInAnimationVariants}
                     initial='initial'
