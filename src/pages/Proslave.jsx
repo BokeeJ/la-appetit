@@ -19,6 +19,8 @@ function Proslave() {
     }
     return (
         <div className='w-full md:h-[40%] md:p-0 p-5'>
+            <div className="w-full  h-96 bg-cover bg-center" style={{ backgroundImage: 'url("/SlikaJelovnik2.webp")' }}>
+            </div>
 
             <div className='w-full flex lg:flex-row md:flex-row flex-col p-5'>
 
@@ -35,15 +37,15 @@ function Proslave() {
 
 
                     <motion.div
-                        className='flex flex-row gap-10 border-2 border-gray items-center justify-center p-5 rounded-3xl'
+                        className='flex flex-row gap-10  items-center justify-center p-5 rounded-3xl'
                         variants={fadeInAnimationVariants}
                         initial='initial'
                         whileInView='animate'
                         viewport={{
                             once: true,
                         }}>
-                        <img className='w-[35%] border border-white rounded-2xl' src="/proslava3.webp" alt="Proslave u La Appetitu" />
-                        <img className='w-[55%] border border-white rounded-2xl' src="/proslava.webp" alt="La Appetit" />
+
+                        <img className='w-full lg:w[70%] md:w-[70%] border border-white rounded-2xl' src="/proslava.webp" alt="La Appetit" />
                     </motion.div>
 
                 </div>

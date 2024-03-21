@@ -19,6 +19,7 @@ function Onama() {
     }
     return (
         <div className='flex flex-col'>
+
             <div className="w-full  h-96 bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: 'url("/13.webp")' }}>
 
             </div>

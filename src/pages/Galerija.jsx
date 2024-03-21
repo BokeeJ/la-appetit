@@ -23,7 +23,7 @@ function Galerija() {
     }
 
     const images = [
-        { id: 1, path: "/stepenice.webp" },
+        { id: 1, path: "/1.webp" },
         { id: 2, path: "/2.webp" },
         { id: 3, path: "/3.webp" },
         { id: 4, path: "/4.webp" },
@@ -31,8 +31,8 @@ function Galerija() {
         { id: 6, path: "/6.webp" },
         { id: 7, path: "/7.webp" },
         { id: 8, path: "/8.webp" },
-        { id: 9, path: "/9.webp" },
-        { id: 10, path: "/10.webp" },
+        { id: 9, path: "/39.webp" },
+        { id: 10, path: "/stepenice.webp" },
         { id: 11, path: "/11.webp" },
         { id: 12, path: "/12.webp" },
         { id: 13, path: "/13.webp" },
@@ -42,12 +42,12 @@ function Galerija() {
         { id: 17, path: "/17.webp" },
         { id: 18, path: "/18.webp" },
         { id: 19, path: "/19.webp" },
-        { id: 20, path: "/20.webp" },
+        { id: 20, path: "/32.webp" },
         { id: 21, path: "/21.webp" },
         { id: 22, path: "/22.webp" },
-        { id: 23, path: "/23.webp" },
+        { id: 23, path: "/34.webp" },
         { id: 24, path: "/24.webp" },
-        { id: 25, path: "/25.webp" },
+        { id: 25, path: "/pozadinaPocetna.webp" },
         { id: 26, path: "/26.webp" },
         { id: 27, path: "/27.webp" },
         { id: 28, path: "/28.webp" },
@@ -57,12 +57,7 @@ function Galerija() {
         { id: 32, path: "/KolacSaMakom.webp" },
         { id: 33, path: "/PitasaVisnjama.webp" },
         { id: 34, path: "/pocetnaDesert.webp" },
-        { id: 35, path: "/pozadinaPocetna.webp" },
-        { id: 36, path: "/30.webp" },
-        { id: 37, path: "/31.webp" },
-        { id: 38, path: "/32.webp" },
-        { id: 39, path: "/33.webp" },
-        { id: 40, path: "/34.webp" },
+
 
     ];
 
@@ -74,7 +69,7 @@ function Galerija() {
 
                 <motion.img
                     key={images[currentIndex].id}
-                    className=" lg:w-[900px] lg:h-[600px] w-[400px] h-[350px] md:w-[600px] md:h-[400px] rounded-2xl"
+                    className=" lg:w-[800px] lg:h-[500px] w-[320px] h-[300px] md:w-[600px] md:h-[400px] rounded-2xl"
                     src={images[currentIndex].path}
                     alt="Main Picture"
                     initial={{ opacity: 0 }}
