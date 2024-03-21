@@ -26,7 +26,7 @@ function Galerija() {
         { id: 1, path: "/1.webp" },
         { id: 2, path: "/2.webp" },
         { id: 3, path: "/3.webp" },
-        { id: 4, path: "/4.webp" },
+        { id: 4, path: "/pocetnaDesert.webp" },
         { id: 5, path: "/5.webp" },
         { id: 6, path: "/6.webp" },
         { id: 7, path: "/7.webp" },
@@ -34,7 +34,7 @@ function Galerija() {
         { id: 9, path: "/39.webp" },
         { id: 10, path: "/stepenice.webp" },
         { id: 11, path: "/11.webp" },
-        { id: 12, path: "/12.webp" },
+        { id: 12, path: "/42.webp" },
         { id: 13, path: "/13.webp" },
         { id: 14, path: "/14.webp" },
         { id: 15, path: "/15.webp" },
@@ -42,11 +42,11 @@ function Galerija() {
         { id: 17, path: "/17.webp" },
         { id: 18, path: "/18.webp" },
         { id: 19, path: "/19.webp" },
-        { id: 20, path: "/32.webp" },
+        { id: 20, path: "/35.webp" },
         { id: 21, path: "/21.webp" },
-        { id: 22, path: "/22.webp" },
+        { id: 22, path: "/41.webp" },
         { id: 23, path: "/34.webp" },
-        { id: 24, path: "/24.webp" },
+        { id: 24, path: "/40.webp" },
         { id: 25, path: "/pozadinaPocetna.webp" },
         { id: 26, path: "/26.webp" },
         { id: 27, path: "/27.webp" },
@@ -56,7 +56,16 @@ function Galerija() {
         { id: 31, path: "/biftekZar.webp" },
         { id: 32, path: "/KolacSaMakom.webp" },
         { id: 33, path: "/PitasaVisnjama.webp" },
-        { id: 34, path: "/pocetnaDesert.webp" },
+        { id: 34, path: "/39.webp" },
+        { id: 35, path: "/35.webp" },
+        { id: 36, path: "/36.webp" },
+        { id: 37, path: "/37.webp" },
+        { id: 38, path: "/38.webp" },
+        { id: 39, path: "/39.webp" },
+
+
+
+
 
 
     ];
