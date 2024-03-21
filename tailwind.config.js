@@ -23,7 +23,8 @@ export default {
         'sans': ['Inter', 'sans-serif'],
         'pisana': ['cursive'],
         'link': ['Georgia'],
-        'debelaSlova': ['Abril Fatface']
+        'debelaSlova': ['Abril Fatface'],
+        'roboto': ['roboto']
       },
     },
   },

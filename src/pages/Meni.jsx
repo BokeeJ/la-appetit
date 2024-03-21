@@ -1695,7 +1695,7 @@ function Meni() {
                  */}
                     <h1 onClick={handleMeni3} className='text-white border-solid border-gray-dark hover:text-l hover:scale-125 hover:transition-all font-link border-2 bg-mis m-2 p-4 rounded-xl cursor-pointer'>KARTA VINA</h1>
                     <div className={meni3 ? 'flex flex-col justify-center visible cursor-pointer items-center m-2 p-2 gap-1' : 'flex flex-col items-center justify-center hidden cursor-pointer'}>
-                        <button className={belaVinaOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleBelaVinaClick}>BELA VINA</button>
+                        <button className={belaVinaOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleBelaVinaClick}>BELA VINA SRBIJE</button>
                         {belaVinaOpen && <BelaVina />}
                         <button className={crvenaVinaSrbOpen ? 'border border-solid border-white rounded-xl p-2' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleCrvenaVinaSrbClick}>CRVENA VINA SRBIJE</button>
                         {crvenaVinaSrbOpen && <CrvenaVinaSrb />}

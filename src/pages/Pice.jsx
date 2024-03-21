@@ -29,7 +29,7 @@ function Pice() {
             className='flex lg:flex-row md:flex-col flex-col border-white justify-center lg:gap-6 p-4'
         >
             <div className='lg:border-4 border-white border-4 rounded-t-2xl bg-mis'>
-                <h1 className='text-white font-link text-3xl m-10'>PICE</h1>
+                <h1 className='text-white font-link text-3xl m-10'>PIZZE</h1>
                 <hr className='text-white border-2 m-4' />
                 <div className=''>
                     {pizze.map((meni, index) => {

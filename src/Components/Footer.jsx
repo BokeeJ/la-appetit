@@ -19,7 +19,7 @@ function Footer() {
         },
         animate: {
             opacity: 3,
-            y: 0,
+            y: 3,
             transition: {
                 delay: 0.1,
                 duration: 3
@@ -28,7 +28,7 @@ function Footer() {
     }
     return (
 
-        <div className='w-full h-full bg-black lg:p-10 flex lg:justify-center relative '>
+        <div className='w-full h-full bg-black lg:p-10 flex justify-center relative'>
             {/* container */}
             <div className='flex lg:flex-row  flex-col gap-10 justify-between items-center lg:w-full p-5 mb-10'>
                 {/* O restoranu */}
@@ -37,7 +37,7 @@ function Footer() {
                     whileInView='animate'
                     viewport={{
                         once: true,
-                    }} className='flex flex-col lg:w-[200px] w-full h-full gap-3 justify-center items-center'
+                    }} className='flex flex-col lg:w-[200px] w-full h-full gap-3 justify-center items-center '
                 >
                     <div className='flex items-center  flex-col'>
                         <img className='w-[300px]  h-[150] rounded-3xl' src="/sodapdf-converted_Page_1.jpeg" alt="LA APPETIT" />
