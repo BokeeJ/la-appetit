@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 //motion
 import { motion } from 'framer-motion'
+import NasaPreporuka from './NasaPreporuka';
 function Pocetna() {
     const slike = [
         "/burger2024.JPG",
@@ -85,33 +86,8 @@ function Pocetna() {
                 </motion.div>
             </div >
             {/* NASA PREPORUKA */}
-            <div className='flex flex-col justify-center items-center m-2'>
-                <h1 className='text-white font-naslovni lg:text-4xl text-3xl mt-8'>NAŠA PREPORUKA</h1>
-                <hr className='border-gray border-solid w-[40%] m-5' />
-                <div className='flex lg:flex-row md:flex-row flex-wrap items-center justify-center w-full h-full gap-2 lg:gap-4 md:gap-3 m-3'>
-                    <div className='flex justify-center items-center flex-col text-white items-center font-naslovni text-xl border border-solid p-2 border-gray rounded-2xl'>
-                        <img className='h-[300px] w-[300px]  p-4 rounded-xl' src="/9.webp" alt="burger" />
-                        <span className='text-xl'>BURGER CLASSIC</span>
+            <NasaPreporuka />
 
-                    </div>
-                    <div className='flex justify-center items-center flex-col text-white items-center font-naslovni text-xl border border-solid p-2 border-gray rounded-2xl'>
-                        <img className='h-[300px] w-[300px]  rounded-xl p-4' src="/biftekZar.webp" alt="meso2" />
-                        <span className='text-xl'>BIFTEK ŽAR</span>
-
-                    </div>
-                    <div className='flex justify-center items-center flex-col text-white items-center font-naslovni text-xl border border-solid p-2 border-gray rounded-2xl'>
-                        <img className='h-[300px] w-[300px]  rounded-xl p-4' src="/biftekUlje.webp" alt="biftek"></img>
-                        <span className='text-xl'>BIFTEK U ULJU</span>
-
-                    </div>
-                    <div className='flex justify-center items-center flex-col text-white items-center font-naslovni text-xl border border-solid p-2 border-gray rounded-2xl'>
-                        <img className='h-[300px] w-[300px] rounded-xl p-4' src="/29.webp" alt="losos"></img>
-                        <span className='text-xl'>LOSOS NA ŽARU</span>
-
-                    </div>
-
-                </div>
-            </div>
             <motion.div
                 variants={fadeInAnimationVariants}
                 initial='initial'
