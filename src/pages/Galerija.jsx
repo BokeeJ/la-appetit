@@ -57,9 +57,9 @@ function Galerija() {
         { id: 32, path: "/KolacSaMakom.webp" },
         { id: 33, path: "/PitasaVisnjama.webp" },
         { id: 34, path: "/38.webp" },
-        { id: 35, path: "/35.webp" },
+        { id: 35, path: "/37.webp" },
         { id: 36, path: "/36.webp" },
-        { id: 37, path: "/37.webp" },
+
 
 
 
