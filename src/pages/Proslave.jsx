@@ -19,8 +19,16 @@ function Proslave() {
     }
     return (
         <div className='w-full md:h-[40%] md:p-0 p-5'>
-            <div className="w-full  h-96 bg-cover bg-center" style={{ backgroundImage: 'url("/proslava.webp")' }}>
-            </div>
+            <motion.div
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                    duration: 2,
+                    delay: 0.5,
+                    ease: [0, 0.71, 0.2, 1.01]
+                }}
+                className="w-full  h-96 bg-cover bg-center" style={{ backgroundImage: 'url("/proslava.webp")' }}>
+            </motion.div>
 
             <div className='w-full flex lg:flex-row md:flex-row flex-col p-5'>
 

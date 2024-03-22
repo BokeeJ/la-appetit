@@ -34,12 +34,12 @@ function Rakije() {
                 <hr className='w-[50%] border-2' />
                 <div className='flex justify-between m-2'>
                     <p className='text-white font-sans text-xl'>ŠLJIVA 0.03</p>
-                    <p className='text-white font-sans text-xl'>280Rsd</p>
+                    <p className='text-white font-sans text-xl'>280rsd</p>
                 </div>
                 <hr className='text-white' />
                 <div className='flex justify-between m-2 text-white text-xl'>
                     <p>DUNJA 0.03</p>
-                    <p>320Rsd</p>
+                    <p>320rsd</p>
 
                 </div>
                 <hr className='text-white' />
@@ -48,52 +48,52 @@ function Rakije() {
                 <div className='flex justify-between text-white text-xl m-2'>
 
                     <p>KRALJICA-ŠLJIVA</p>
-                    <p>320Rsd</p>
+                    <p>320rsd</p>
                 </div>
                 <hr className='text-white' />
                 <div className='flex justify-between text-white text-xl m-2'>
 
                     <p>NOSTALGIJA-DUNJA</p>
-                    <p>380Rsd</p>
+                    <p>380rsd</p>
                 </div>
                 <hr className='text-white' />
                 <h2 className='text-3xl font-link m-2'>MEDENA KAPLJICA</h2>
                 <hr className='w-[50%] border-2' />
                 <div className='flex justify-between text-white text-xl m-2'>
                     <p>MEDOVAČA</p>
-                    <p>290Rsd</p>
+                    <p>290rsd</p>
                 </div>
                 <hr className='text-white' />
                 <h2 className='text-3xl font-link m-2'>TAKOVO</h2>
                 <hr className='w-[50%] border-2' />
                 <div className='flex justify-between text-white text-xl m-2'>
                     <p>VILJAMOVKA</p>
-                    <p>290Rsd</p>
+                    <p>290rsd</p>
 
                 </div>
                 <hr className='text-white' />
                 <div className='flex justify-between text-white text-xl m-2'>
                     <p>KAJSIJA 0.03</p>
-                    <p>320Rsd</p>
+                    <p>320rsd</p>
                 </div>
                 <div className='flex justify-between text-white text-xl m-2'>
                     <p>LOZOVAČA 0.03</p>
-                    <p>280Rsd</p>
+                    <p>280rsd</p>
                 </div>
                 <hr className='text-white' />
                 <div className='flex justify-between text-white text-xl m-2'>
                     <p>MAGIJA-KAJSIJA 0.03</p>
-                    <p>290Rsd</p>
+                    <p>290rsd</p>
                 </div>
                 <hr className='text-white' />
                 <div className='flex justify-between text-white text-xl m-2'>
                     <p>NIRVANA-KRUŠKA 0.03</p>
-                    <p>360Rsd</p>
+                    <p>360rsd</p>
                 </div>
                 <hr className='text-white' />
                 < div className='flex justify-between text-white text-xl m-2'>
                     <p>MALINA 0.03</p>
-                    <p>290Rsd</p>
+                    <p>290rsd</p>
                 </div>
                 <hr className='text-white' />
             </div >

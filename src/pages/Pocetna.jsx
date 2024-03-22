@@ -33,8 +33,16 @@ function Pocetna() {
     return (
         <div className='w-full' >
             {/* cover slika */}
-            <div className="w-full  h-96 bg-cover bg-center" style={{ backgroundImage: 'url("/pozadinaPocetna.webp")' }}>
-            </div>
+            <motion.div
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                    duration: 2,
+                    delay: 0.5,
+                    ease: [0, 0.71, 0.2, 1.01]
+                }}
+                className="w-full  h-96 bg-cover bg-center" style={{ backgroundImage: 'url("/pozadinaPocetna.webp")' }}>
+            </motion.div>
             {/* container */}
             <div className='flex flex-col lg:flex-row md:flex-row justify-between p-10 gap-3'>
                 <div className='flex flex-col border-solid border-2 border-gray lg:h-[450px] lg:w-[800px] md:w-[700px] h-[500px] bg-mis text-white  items-center rounded-2xl  rounded-lg transition-transform relative overflow-hidden'>

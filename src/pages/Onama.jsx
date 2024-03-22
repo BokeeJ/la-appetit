@@ -20,9 +20,17 @@ function Onama() {
     return (
         <div className='flex flex-col'>
 
-            <div className="w-full  h-96 bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: 'url("/13.webp")' }}>
-
-            </div>
+            <motion.div
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                    duration: 2,
+                    delay: 0.5,
+                    ease: [0, 0.71, 0.2, 1.01]
+                }}
+                className="w-full  h-96 bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: 'url("/13.webp")' }}>
+                <h1 className='text-white text-5xl font-link mt-5'>DOBRODOŠLI</h1>
+            </motion.div>
 
             <motion.div
                 className="flex items-center justify-center flex-col"
@@ -34,7 +42,7 @@ function Onama() {
                 }}
             >
 
-                <h1 className='text-white text-5xl font-link mt-5'>DOBRODOŠLI</h1>
+
                 <div className='w-[80%] h-full text-xl p-5'>
                     <div className="flex flex-col items-center justify-center p-14 gap-5 text-white">
                         <p className="text-center">Dobrodošli u raskošni svet gastronomske ekstravagancije, dobrodošli u LA APPETIT.</p>
