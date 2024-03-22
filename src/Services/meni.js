@@ -720,7 +720,7 @@ export const belaVina = [
 export const deserti = [
     {
         id: 1,
-        name: "SUFE OD ČOKOLADE",
+        name: "SUFLE OD ČOKOLADE",
         description: 'Sa šumskim voćem i sladoledom od vanile',
         price: 500
     },

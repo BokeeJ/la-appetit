@@ -85,7 +85,9 @@ function Pocetna() {
                     </div>
                 </motion.div>
             </div >
-            {/* NASA PREPORUKA */}
+            {/* NASA REPORUKA */}
+            <h1 className='text-white font-naslovni flex justify-center text-3xl text-3xl mt-8'>NAŠA PREPORUKA</h1>
+
             <NasaPreporuka />
 
             <motion.div

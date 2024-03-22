@@ -40,9 +40,8 @@ function NasaPreporuka() {
                         </SwiperSlide>
                     )
                 })}
-
-
-            </Swiper></div>
+            </Swiper>
+        </div>
     )
 }
 
