@@ -35,7 +35,7 @@ function NasaPreporuka() {
                 {preporuka.map((slika, id) => {
                     return (
                         <SwiperSlide key={id}>
-                            <img className='h-[250px] w-[200px] rounded-xl' src={slika.img} />
+                            <img className='h-[300px] w-[170px] rounded-xl' src={slika.img} />
                             <h1 className='text-white text-xl flex justify-center mt-1 font-link'>{slika.name}</h1>
                         </SwiperSlide>
                     )
