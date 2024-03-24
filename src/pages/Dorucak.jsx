@@ -101,7 +101,7 @@ function Dorucak() {
                     </div>
                 </div>
                 <div className='mt-9 '>
-                    <img className='w-[550px] lg:m-4 lg:rounded-3xl' src="/6.jpg" alt="" />
+                    <img className='w-[550px] lg:m-4 lg:rounded-3xl' src="/dorucakmeni.webp" alt="" />
 
                 </div>
 

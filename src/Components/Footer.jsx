@@ -11,6 +11,9 @@ import { CiClock1 } from "react-icons/ci";
 import { motion } from 'framer-motion'
 
 function Footer() {
+    const telefonBroj = '+381 69 784 050';
+    const emailAdresa = 'restoran.la.appetit@gmail.com'
+
     const fadeInAnimationVariants = {
         initial: {
             opacity: 0,
@@ -79,11 +82,11 @@ function Footer() {
                     <hr className='text-white w-full border-2 border-solid border-white' />
                     <div className='mt-[40px] flex flex-col gap-8'>
                         <div className='flex flex-row gap-3 items-center'> <FaPhoneAlt color='white' size={25} />
-                            <h3 className='text-white text-[16px] font-link'>+381 69 784 050</h3>
+                            <a href={`tel:${telefonBroj}`} className='text-white text-[16px] font-link'>+381 69 784 050</a>
                         </div>
                         <div className='flex flex-row gap-3 items-center'> <CiMail color='white' size={35} />
 
-                            <h3 className='text-white mr-5 text-l font-link'>restoran.la.appetit@gmail.com</h3>
+                            <a href={`mailto:${emailAdresa}`} className='text-white mr-5 text-l font-link'>restoran.la.appetit@gmail.com</a>
                         </div>
 
                     </div>
@@ -120,7 +123,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div className='text-white bottom-0 right-0 absolute lg:m-2 lg:mr-2 md:mr-2 md:m-2 mr-10'><p className='font-link'>© Copyright LA APPÉTIT </p></div>
+            <div className='text-white bottom-0 right-0 absolute lg:m-2 lg:mr-2 md:mr-2 md:m-2 mr-10'><p className='font-link'>© Copyright LA APPÉTIT - Designed by BojanD. </p></div>
         </div>
 
     )

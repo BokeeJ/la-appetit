@@ -52,7 +52,7 @@ function Pocetna() {
                 <motion.div variants={fadeInAnimationVariants} initial='initial' whileInView='animate' viewport={{ once: true }} className='bg-black h-full lg:h-[450px] md:h-[500px] w-full flex flex-col items-center p-5 border border-gray-300 shadow-md hover:scale-125 transition-transform rounded-2xl lg:justify-center border-solid border-gray border-2'>
                     <h1 className='font-naslovni text-white flex flex-row items-center gap-2'><span className='text-4xl font-naslovni'>LA APPÉTIT</span><IoIosRestaurant size={40} /></h1>
                     <hr className='w-full my-2 border-t border-gray-400 text-white mt-5' />
-                    <span className='text-white lg:text-xl font-link text-xl md:text-[16px]'>Mesto gde se susreću raskoš i harmonija, stvarajući jedinstveno iskustvo koje će Vas inspirirati iznova i iznova.
+                    <span className='text-white lg:text-xl font-link text-xl md:text-[16px] text-center'>Mesto gde se susreću raskoš i harmonija, stvarajući jedinstveno iskustvo koje će Vas inspirirati iznova i iznova.
                         U LA APPETITU, hrana postaje umetnost, a svaki obrok je prilika za stvaranje nezaboravnih trenutaka. Dobrodošli u dom ukusa i elegancije.
                     </span>
                     <Link to={'/Onama'}>

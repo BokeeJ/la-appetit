@@ -44,12 +44,14 @@ function Onama() {
 
 
                 <div className='w-[80%] h-full text-xl p-5'>
-                    <div className="flex flex-col items-center justify-center p-14 gap-5 text-white">
-                        <p className="text-center">Dobrodošli u raskošni svet gastronomske ekstravagancije, dobrodošli u LA APPETIT.</p>
-                        <p className="text-center">Ovde, svaki zalogaj je ne samo jelo, već i remek-delo. U našem restoranu, umetnost prelazi granice platna i ulazi direktno na vaš tanjir. Svaki sastojak je pažljivo odabran kako bi stvorio savršeno usklađen spoj ukusa i tekstura, kao što umetnik pažljivo bira boje i oblike za svoje delo.</p>
-                        <p className="text-center">Ali naša umetnost nije ograničena samo na tanjir. Naš enterijer je pažljivo osmišljen kako bi stvorio atmosferu koja će oduzeti dah. Svaka linija, svaka tekstura, svaka boja - sve je pažljivo birano, kako bi stvorilo harmoniju između prostora i gostiju.</p>
-                        <p className="text-center">La Appetit je mesto gde se umetnost sreće sa elegancijom, stvarajući iskustvo koje će vas ostaviti bez daha i istovremeno nadahnjivati vaša čula.</p>
+                    <div className="flex flex-col items-center justify-center p-6 lg:p-14 gap-5 text-white lg:w-3/4 md:w-4/5 sm:w-full mx-auto">
+                        <p className="text-center text-base sm:text-lg lg:text-xl">Dobrodošli u raskošni svet gastronomske ekstravagancije, dobrodošli u LA APPETIT.</p>
+                        <p className="text-center text-base sm:text-lg lg:text-xl">Ovde, svaki zalogaj je ne samo jelo, već i remek-delo. U našem restoranu, umetnost prelazi granice platna i ulazi direktno na vaš tanjir. Svaki sastojak je pažljivo odabran kako bi stvorio savršeno usklađen spoj ukusa i tekstura, kao što umetnik pažljivo bira boje i oblike za svoje delo.</p>
+                        <p className="text-center text-base sm:text-lg lg:text-xl">Ali naša umetnost nije ograničena samo na tanjir. Naš enterijer je pažljivo osmišljen kako bi stvorio atmosferu koja će oduzeti dah. Svaka linija, svaka tekstura, svaka boja - sve je pažljivo birano, kako bi stvorilo harmoniju između prostora i gostiju.</p>
+                        <p className="text-center text-base sm:text-lg lg:text-xl">La Appetit je mesto gde se umetnost sreće sa elegancijom, stvarajući iskustvo koje će vas ostaviti bez daha i istovremeno nadahnjivati vaša čula.</p>
                     </div>
+
+
                 </div>
 
             </motion.div >

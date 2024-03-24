@@ -11,6 +11,8 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 function Navbar() {
+    const telefonBroj = '+381 69 784 050';
+
     const [toggle, setToggle] = useState(false);
 
     const handleMenu = () => {
@@ -29,7 +31,7 @@ function Navbar() {
                     </div>
                     <div className='flex flex-row gap-4'>
                         <FaPhoneAlt color='white' size={20} />
-                        <span className='text-white'>+381 69 784 050</span></div>
+                        <a href={`tel:${telefonBroj}`} className='text-white'>+381 69 784 050</a></div>
                 </div>
                 <div className='flex flex-row lg:mr-10 mt-1 gap-3'>
                     <a className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125' href="https://www.facebook.com/Restoran.La.Appetit/" target="_blank"><CiFacebook color='white' size={25} /></a>
@@ -39,7 +41,7 @@ function Navbar() {
             <div className='w-full h-full md:h-[150px] lg:h-[120px] md:flex-row rounded-b-lg bg-black flex flex-col justify-between items-center'>
 
                 <motion.div
-                    className="box flex flex-row items-center lg:ml-5"
+                    className="box flex flex-row items-center lg:mb-[20px] lg:absolute md:absolute lg:ml-5"
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{
@@ -53,9 +55,9 @@ function Navbar() {
                         }
                     }}
                 >
-                    <div className='flex flex-col md:mt-8 justify-center items-center lg:absolute md:absolute p-2 h-[100px] '>
+                    <div className='flex flex-col md:mt-8 justify-center items-center  p-2  '>
 
-                        <h2 className='text-white font-link text-5xl'>LA APPÉTIT</h2>
+                        <Link to={'/'} className='text-white font-link text-5xl'>LA APPÉTIT</Link>
                     </div>
 
                 </motion.div>

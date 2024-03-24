@@ -1566,7 +1566,7 @@ function Meni() {
     const fadeInAnimationVariants = {
         initial: {
             opacity: 0,
-            x: 50
+            x: -50
 
         },
         animate: {
@@ -1611,7 +1611,7 @@ function Meni() {
                 {/* Glavni Kontenjer Menija */}
                 {/* Jelovnik */}
                 <div className='text-white flex flex-col items-center p-5' >
-                    <h1 onClick={handleMeni1} className='text-white border-solid border-gray-dark hover:text-l hover:scale-125 hover:transition-all font-link border-2 bg-mis m-2 p-4 rounded-xl cursor-pointer w-[129px]'>JELOVNIK</h1>
+                    <h1 onClick={handleMeni1} className='text-white border-solid border-gray-dark hover:text-l hover:scale-125 hover:transition-all font-link border-2 bg-mis m-2 p-4 rounded-xl cursor-pointer w-[121px]'>JELOVNIK</h1>
                     <div className={meni1 ? 'flex flex-col justify-center visible cursor-pointer items-center m-2 p-2 gap-1' : 'flex flex-col justify-center hidden items-center cursor-pointer'}>
                         <button className={dorucakOpen ? 'border border-solid border-white rounded-xl p-2 visible' : 'hover:text-l hover:scale-125 hover:transition-all hover:text-gray'} onClick={handleDorucakClick}>DORUČAK</button>
                         {dorucakOpen && <Dorucak />}
