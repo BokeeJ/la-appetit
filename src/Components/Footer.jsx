@@ -46,12 +46,13 @@ function Footer() {
                         <img className='w-[300px]  h-[150] rounded-3xl' src="/footer.webp" alt="LA APPÉTIT" />
                     </div>
                     {/* social network */}
-                    <div className='flex flex-col gap-5 p-5 '>
-                        <div className='flex flex-row gap-3'>
+                    <div className='flex flex-col gap-3 p-2 items-center '>
+                        <div className='flex flex-row gap-3 items-center'>
                             <a className='text-white' href="https://www.facebook.com/Restoran.La.Appetit/" target="_blank"><CiFacebook color='white' size={40} /></a>
                             <p className='text-white'>Restoran La Appetit</p>
                         </div>
-                        <div className='flex flex-row gap-3'>  <a className='text-white' href="https://www.instagram.com/restoranlaappetit/" target="_blank"><FaInstagram color='white' size={40} /></a>
+                        <div className='flex flex-row gap-3 items-center mr-4'>
+                            <a className='text-white' href="https://www.instagram.com/restoranlaappetit/" target="_blank"><FaInstagram color='white' size={40} /></a>
                             <p className='text-white'>restoranlaappetit</p>
                         </div>
 
@@ -81,10 +82,11 @@ function Footer() {
                     <h2 className='text-2xl text-white font-link'>KONTAKT</h2>
                     <hr className='text-white w-full border-2 border-solid border-white' />
                     <div className='mt-[40px] flex flex-col gap-8'>
-                        <div className='flex flex-row gap-3 items-center'> <FaPhoneAlt color='white' size={25} />
+                        <div className='flex flex-row gap-3 items-center'>
+                            <FaPhoneAlt color='white' size={25} />
                             <a href={`tel:${telefonBroj}`} className='text-white text-[16px] font-link'>+381 69 784 050</a>
                         </div>
-                        <div className='flex flex-row gap-3 items-center'> <CiMail color='white' size={35} />
+                        <div className='flex flex-row gap-3 items-center'> <CiMail color='white' size={25} />
 
                             <a href={`mailto:${emailAdresa}`} className='text-white mr-5 text-l font-link'>restoran.la.appetit@gmail.com</a>
                         </div>
