@@ -31,7 +31,7 @@ function Navbar() {
                     </div>
                     <div className='flex flex-row gap-4'>
                         <FaPhoneAlt color='white' size={20} />
-                        <a href={`tel:${telefonBroj}`} className='text-white'>+381 69 784 050</a></div>
+                        <a href={`tel:${telefonBroj}`} className='text-white'>+381 69 0187 564</a></div>
                 </div>
                 <div className='flex flex-row lg:mr-10 mt-1 gap-3'>
                     <a className='transition-transform duration-300 transform-gpu scale-100 hover:scale-125' href="https://www.facebook.com/Restoran.La.Appetit/" target="_blank"><CiFacebook color='white' size={25} /></a>
