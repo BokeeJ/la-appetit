@@ -11,7 +11,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 function Navbar() {
-    const telefonBroj = '+381 69 784 050';
+    const telefonBroj = '+381 69 0187 564';
 
     const [toggle, setToggle] = useState(false);
 

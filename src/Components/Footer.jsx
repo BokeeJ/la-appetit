@@ -11,7 +11,7 @@ import { CiClock1 } from "react-icons/ci";
 import { motion } from 'framer-motion'
 
 function Footer() {
-    const telefonBroj = '+381 69 784 050';
+    const telefonBroj = '+381 69 0187 564';
     const emailAdresa = 'restoran.la.appetit@gmail.com'
 
     const fadeInAnimationVariants = {
