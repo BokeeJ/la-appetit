@@ -84,7 +84,7 @@ function Footer() {
                     <div className='mt-[40px] flex flex-col gap-8'>
                         <div className='flex flex-row gap-3 items-center'>
                             <FaPhoneAlt color='white' size={25} />
-                            <a href={`tel:${telefonBroj}`} className='text-white text-[16px] font-link'>+381 69 784 050</a>
+                            <a href={`tel:${telefonBroj}`} className='text-white text-[16px] font-link'>+381 69 0187 564</a>
                         </div>
                         <div className='flex flex-row gap-3 items-center'> <CiMail color='white' size={25} />
 
